@@ -41,7 +41,7 @@ const projects: Project[] = [
     name: 'OurWorld',
     description:
       'A decentralized digital ecosystem exploring alternative internet infrastructure, community-owned networks, and new models of digital sovereignty.',
-    link: { href: 'https://ourworld.tf', label: 'ourworld.tf' },
+    link: { href: '/projects/ourworld', label: '/projects/ourworld' },
     logo: logoOurWorld,
   },
   {

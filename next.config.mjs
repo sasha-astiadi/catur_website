@@ -11,6 +11,7 @@ const nextConfig = {
   outputFileTracingRoot: import.meta.dirname,
   outputFileTracingIncludes: {
     '/articles/*': ['./src/app/articles/**/*.mdx'],
+    '/projects/*': ['./src/app/projects/**/*.mdx'],
   },
 }
 
