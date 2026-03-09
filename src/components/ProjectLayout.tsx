@@ -5,7 +5,6 @@ import { useRouter } from 'next/navigation'
 
 import { AppContext } from '@/app/providers'
 import { Container } from '@/components/Container'
-import { ProjectMarquee } from '@/components/ProjectMarquee'
 import { Prose } from '@/components/Prose'
 import { type ArticleWithSlug } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
@@ -32,7 +31,9 @@ export function ProjectLayout({
 }) {
   let router = useRouter()
   let { previousPathname } = useContext(AppContext)
-  let marqueeImages = (project as any).marqueeImages as string[] | undefined
+  const mockupImg =
+    ((project as any)?.mockupImg as string | undefined) ??
+    '/images/projects/threefold/tf_mockup.png'
 
   return (
     <Container className="mt-16 lg:mt-24">
@@ -53,12 +54,13 @@ export function ProjectLayout({
               <h1 className="mt-6 text-4xlfont-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
                 {project.title}
               </h1>
-              {marqueeImages && (
-                <div className="mt-8">
-                  <ProjectMarquee images={marqueeImages} />
-                </div>
-              )}
-             
+              <div className="mt-8">
+                <img
+                  src={mockupImg}
+                  alt={String((project as any)?.title ?? 'Project')} 
+                  className="w-full rounded-2xl"
+                />
+              </div>
             </header>
             <Prose className="mt-8" data-mdx-content>
               {children}
