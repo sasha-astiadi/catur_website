@@ -50,7 +50,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'I’m Catur Hari Wijaya. I live in New York City, where I design the future.',
+    'Catur Hari Wijaya creates music as a living journey — rooted in rhythm, guided by movement, and felt through the body.',
 }
 
 export default function About() {
@@ -69,35 +69,17 @@ export default function About() {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            I’m Catur Hari Wijaya. I live in New York City, where I design the
-            future.
+            Catur Hari Wijaya creates music as a living journey — rooted in rhythm, guided by movement, and felt through the body.
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I’ve loved making things for as long as I can remember, and wrote
-              my first program when I was 6 years old, just two weeks after my
-              mom brought home the brand new Macintosh LC 550 that I taught
-              myself to type on.
+              A multi-instrumentalist, songwriter, and lifelong student of ancestral traditions, Catur draws inspiration from Indonesia, India, the Middle East, North Africa, and West Africa. Strings, flutes, voices, and earthy percussion intertwine to form immersive soundscapes where ancient melodies meet contemporary expression.
             </p>
             <p>
-              The only thing I loved more than computers as a kid was space.
-              When I was 8, I climbed the 40-foot oak tree at the back of our
-              yard while wearing my older sister’s motorcycle helmet, counted
-              down from three, and jumped — hoping the tree was tall enough that
-              with just a bit of momentum I’d be able to get to orbit.
+              Based in Bali, Catur is a regular teacher at the Yoga Barn in Ubud, where he shares his practice through rhythm, presence, and transmission. At BaliSpirit Festival, he will perform live on the Grove stage with his band, The Sound Nomads — an eclectic ensemble blending polyrhythmic grooves, hypnotic chants, psychedelic guitars, and rich cross-cultural textures.
             </p>
             <p>
-              I spent the next few summers indoors working on a rocket design,
-              while I recovered from the multiple surgeries it took to fix my
-              badly broken legs. It took nine iterations, but when I was 15 I
-              sent my dad’s Blackberry into orbit and was able to transmit a
-              photo back down to our family computer from space.
-            </p>
-            <p>
-              Today, I’m the founder of Planetaria, where we’re working on
-              civilian space suits and manned shuttle kits you can assemble at
-              home so that the next generation of kids really <em>can</em> make
-              it to orbit — from the comfort of their own backyards.
+              Each performance unfolds as a ritual of rhythm and groove, weaving original compositions with traditional songs passed down through generations. What emerges is a shared experience where music, dance, and presence dissolve into one — a celebration of the nomadic spirit and the universal language of rhythm.
             </p>
           </div>
         </div>
