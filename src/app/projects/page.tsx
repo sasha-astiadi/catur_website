@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+<<<<<<< HEAD
 import Image from 'next/image'
 
 import { Card } from '@/components/Card'
@@ -61,11 +62,21 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export const metadata: Metadata = {
   title: 'Projects',
   description: 'Things I’ve made trying to put my dent in the universe.',
+=======
+
+import { SimpleLayout } from '@/components/SimpleLayout'
+import { ProjectList } from '@/components/ProjectList'
+
+export const metadata: Metadata = {
+  title: 'Projects',
+  description: "Websites I’ve built while trying to understand how design, technology, and people fit together.",
+>>>>>>> source/main
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
+<<<<<<< HEAD
       title="Things I’ve made trying to put my dent in the universe."
       intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
     >
@@ -94,6 +105,15 @@ export default function Projects() {
           </Card>
         ))}
       </ul>
+=======
+      title="Websites I’ve built while trying to understand how design, technology, and people fit together"
+      intro="A collection of projects spanning product design, web engineering, and decentralized systems.
+Each one reflects an interest in clarity, structure, and building tools that empower people; whether through storytelling, infrastructure, or thoughtful interfaces."
+      reveal
+      ctaWidth="footer"
+    >
+      <ProjectList />
+>>>>>>> source/main
     </SimpleLayout>
   )
 }

@@ -2,6 +2,7 @@ import assert from 'assert'
 import * as cheerio from 'cheerio'
 import { Feed } from 'feed'
 
+<<<<<<< HEAD
 export async function GET(req: Request) {
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
 
@@ -12,6 +13,30 @@ export async function GET(req: Request) {
   let author = {
     name: 'Catur Hari Wijaya',
     email: 'spencer@planetaria.tech',
+=======
+import { getAllArticles } from '@/lib/articles'
+
+function getSiteUrl(req: Request) {
+  const forwardedProto = req.headers.get('x-forwarded-proto')
+  const forwardedHost = req.headers.get('x-forwarded-host')
+
+  if (forwardedProto && forwardedHost) {
+    return `${forwardedProto}://${forwardedHost}`
+  }
+
+  const env = process.env.NEXT_PUBLIC_SITE_URL
+  if (env) return env
+
+  return new URL(req.url).origin
+}
+
+export async function GET(req: Request) {
+  const siteUrl = getSiteUrl(req)
+
+  let author = {
+    name: 'Sasha Astiadi',
+    email: 'sashaastiadi@gmail.com',
+>>>>>>> source/main
   }
 
   let feed = new Feed({
@@ -28,6 +53,7 @@ export async function GET(req: Request) {
     },
   })
 
+<<<<<<< HEAD
   let articleIds = require
     .context('../articles', true, /\/page\.mdx$/)
     .keys()
@@ -44,6 +70,20 @@ export async function GET(req: Request) {
     let title = article.find('h1').first().text()
     let date = article.find('time').first().attr('datetime')
     let content = article.find('[data-mdx-content]').first().html()
+=======
+  const articles = await getAllArticles()
+
+  for (const article of articles) {
+    const url = `${siteUrl}/articles/${article.slug}`
+    let html = await (await fetch(url)).text()
+    let $ = cheerio.load(html)
+
+    let publicUrl = `${siteUrl}/articles/${article.slug}`
+    let articleEl = $('article').first()
+    let title = articleEl.find('h1').first().text()
+    let date = articleEl.find('time').first().attr('datetime')
+    let content = articleEl.find('[data-mdx-content]').first().html()
+>>>>>>> source/main
 
     assert(typeof title === 'string')
     assert(typeof date === 'string')

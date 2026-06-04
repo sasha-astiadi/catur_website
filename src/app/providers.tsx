@@ -42,11 +42,19 @@ export const AppContext = createContext<{ previousPathname?: string }>({})
 
 export function Providers({ children }: { children: React.ReactNode }) {
   let pathname = usePathname()
+<<<<<<< HEAD
   let previousPathname = usePrevious(pathname)
 
   return (
     <AppContext.Provider value={{ previousPathname }}>
       <ThemeProvider attribute="class" disableTransitionOnChange>
+=======
+  let previousPathname: string | undefined = usePrevious(pathname) ?? undefined
+
+  return (
+    <AppContext.Provider value={{ previousPathname }}>
+      <ThemeProvider attribute="class" defaultTheme="dark" disableTransitionOnChange>
+>>>>>>> source/main
         <ThemeWatcher />
         {children}
       </ThemeProvider>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
@@ -33,6 +34,10 @@ function Tool({
     </Card>
   )
 }
+=======
+import { SimpleLayout } from '@/components/SimpleLayout'
+import { UsesList } from '@/components/UsesContent'
+>>>>>>> source/main
 
 export const metadata = {
   title: 'Uses',
@@ -43,6 +48,7 @@ export default function Uses() {
   return (
     <SimpleLayout
       title="Software I use, gadgets I love, and other things I recommend."
+<<<<<<< HEAD
       intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
     >
       <div className="space-y-20">
@@ -118,6 +124,11 @@ export default function Uses() {
           </Tool>
         </ToolsSection>
       </div>
+=======
+      intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I'm being productive when I'm really just procrastinating. Here's a big list of all of my favorite stuff."
+    >
+      <UsesList />
+>>>>>>> source/main
     </SimpleLayout>
   )
 }

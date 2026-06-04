@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+<<<<<<< HEAD
 
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
@@ -39,10 +40,14 @@ function Appearance({
     </Card>
   )
 }
+=======
+import { permanentRedirect } from 'next/navigation'
+>>>>>>> source/main
 
 export const metadata: Metadata = {
   title: 'Speaking',
   description:
+<<<<<<< HEAD
     'I’ve spoken at events all around the world and been interviewed for many podcasts.',
 }
 
@@ -95,4 +100,11 @@ export default function Speaking() {
       </div>
     </SimpleLayout>
   )
+=======
+    "I’ve had the chance to speak at a few events and appear on a handful of podcasts.",
+}
+
+export default function Speaking() {
+  permanentRedirect('/press')
+>>>>>>> source/main
 }

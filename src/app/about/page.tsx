@@ -1,4 +1,5 @@
 import { type Metadata } from 'next'
+<<<<<<< HEAD
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -46,15 +47,31 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     </svg>
   )
 }
+=======
+
+import { ContainerOuter } from '@/components/Container'
+import {
+  AboutPortrait,
+  AboutBio,
+  AboutSocialLinks,
+} from '@/components/AboutContent'
+import { CTA } from '@/components/CTA'
+import { RevealGroup, RevealSection } from '@/components/InteractiveReveal'
+>>>>>>> source/main
 
 export const metadata: Metadata = {
   title: 'About',
   description:
+<<<<<<< HEAD
     'Catur Hari Wijaya creates music as a living journey — rooted in rhythm, guided by movement, and felt through the body.',
+=======
+    "I'm Sasha Astiadi. Web Architect, Developer & Product Consultant.",
+>>>>>>> source/main
 }
 
 export default function About() {
   return (
+<<<<<<< HEAD
     <Container className="mt-16 sm:mt-32">
       <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
         <div className="lg:pl-20">
@@ -108,5 +125,31 @@ export default function About() {
         </div>
       </div>
     </Container>
+=======
+    <ContainerOuter className="mt-12 sm:mt-24 sm:px-6 lg:px-0">
+      <div className="relative px-2 sm:px-6 lg:px-0">
+        <RevealGroup>
+          <div className="mx-auto max-w-6xl">
+            <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
+              <RevealSection id="about-portrait">
+                <AboutPortrait />
+              </RevealSection>
+              <RevealSection id="about-bio" className="lg:order-first lg:row-span-2">
+                <AboutBio />
+              </RevealSection>
+              <RevealSection id="about-links">
+                <AboutSocialLinks />
+              </RevealSection>
+            </div>
+          </div>
+          <RevealSection id="about-cta">
+            <div className="mt-12">
+              <CTA />
+            </div>
+          </RevealSection>
+        </RevealGroup>
+      </div>
+    </ContainerOuter>
+>>>>>>> source/main
   )
 }

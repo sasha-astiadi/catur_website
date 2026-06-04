@@ -7,7 +7,11 @@ export function Section({
   title: string
   children: React.ReactNode
 }) {
+<<<<<<< HEAD
   let id = useId()
+=======
+  const id = useId()
+>>>>>>> source/main
 
   return (
     <section
@@ -17,7 +21,11 @@ export function Section({
       <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
         <h2
           id={id}
+<<<<<<< HEAD
           className="text-sm font-semibold text-zinc-800 dark:text-zinc-100"
+=======
+          className="text-sm font-normal text-zinc-800 dark:text-zinc-100"
+>>>>>>> source/main
         >
           {title}
         </h2>
