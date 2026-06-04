@@ -84,7 +84,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="flex h-full bg-[#f8f8f5] dark:bg-black"
+        className="flex h-full bg-[#f8f8f5] dark:bg-[#0F1C27]"
         suppressHydrationWarning
       >
         <Providers>

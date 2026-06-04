@@ -22,15 +22,16 @@ export function NewHero() {
             <div className="lg:grid lg:grid-cols-12 lg:gap-x-0">
               <div className="py-8 lg:col-span-6 lg:flex lg:aspect-square lg:flex-col lg:justify-center lg:py-0">
                 <div className="mx-auto max-w-lg lg:mx-0">
-                  <div className="hidden sm:mt-32 sm:flex lg:mt-0">
-                    <div className="relative rounded-full px-3 py-1 text-sm/6 text-zinc-600 ring-1 ring-zinc-900/10 hover:ring-zinc-900/20 dark:text-zinc-400 dark:ring-white/10 dark:hover:ring-white/20">
-                      Got a project in mind?{" "}
+                  <div className="hidden sm:mt-24 sm:flex lg:mt-10">
+                    <div className="relative rounded-full px-3 py-1 text-sm/5 text-zinc-600 ring-1 ring-zinc-900/10 hover:ring-zinc-900/20 dark:text-zinc-400 dark:ring-white/10 dark:hover:ring-white/20">
+                      '<span className="font-bold">KOSMOS</span>' - The new album Is Out,{" "}
                       <a
                         href="https://calendly.com/sashaastiadi/30min"
                         className={`${libreBodoniItalic} whitespace-nowrap text-zinc-900 dark:text-zinc-100`}
                       >
                         <span aria-hidden="true" className="absolute inset-0" />
-                        Book a free consultation call <span aria-hidden="true">&rarr;</span>
+                        Listen to the new album →
+                         <span aria-hidden="true">&rarr;</span>
                       </a>
                     </div>
                   </div>

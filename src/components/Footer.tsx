@@ -56,7 +56,7 @@ export function Footer() {
                     className="h-9 w-auto dark:hidden"
                   />
                   <img
-                    src="/images/catur_logo_light.svg"
+                    src="/images/catur_logo_light2.svg"
                     alt="Sasha Astiadi"
                     className="hidden h-9 w-auto dark:block"
                   />

@@ -110,10 +110,10 @@ function MobileNavigation(
   let pageTitles: Record<string, string> = {
     '/': 'Home',
     '/about': 'About',
-    '/articles': 'Articles',
-    '/projects': 'Projects',
-    '/press': 'Press',
-    '/uses': 'Uses',
+    '/articles': 'Music',
+    '/projects': 'Workshops',
+    '/press': 'Media',
+    '/contact': 'Contact',
   }
 
   let pageTitle = (pathname ? pageTitles[pathname] : undefined) ?? 'Menu'
@@ -142,7 +142,7 @@ function MobileNavigation(
           <PopoverPanel
             focus
             transition
-            className="fixed inset-x-4 top-8 z-50 origin-top rounded-xl bg-white bg-linear-to-b from-[#ffffff] to-[#ffffff]/25 p-8 duration-150 data-closed:scale-95 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in dark:bg-zinc-900 dark:bg-linear-to-b dark:from-[#18181B] dark:to-[#18181B]/10 dark:ring-zinc-800"
+            className="fixed inset-x-4 top-8 z-50 origin-top rounded-xl bg-white bg-linear-to-b from-[#ffffff] to-[#ffffff]/25 p-8 duration-150 data-closed:scale-95 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in dark:bg-zinc-900 dark:bg-linear-to-b dark:from-[#125C52] dark:to-[#125C52]/10 dark:ring-zinc-800"
           >
             <div className="flex flex-row-reverse items-center justify-between">
               <PopoverButton aria-label="Close menu" className="-m-1 p-1">
@@ -151,11 +151,11 @@ function MobileNavigation(
             </div>
             <nav className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-lg text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/">Home</MobileNavItem>
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Articles</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/press">Press</MobileNavItem>
+                <MobileNavItem href="/articles">Music</MobileNavItem>
+                <MobileNavItem href="/projects">Workshops</MobileNavItem>
+                <MobileNavItem href="/press">Media</MobileNavItem>
+                <MobileNavItem href="/contact">Contact</MobileNavItem>
               </ul>
             </nav>
           </PopoverPanel>
@@ -200,11 +200,11 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
       <ul
         className={`flex items-center rounded-xl px-3 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:h-14 md:px-4 md:text-base ${newHeroGradientLight} ${newHeroGradientDark}`}
       >
-        <NavItem href="/">Home</NavItem>
         <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/press">Press</NavItem>
+        <NavItem href="/articles">Music</NavItem>
+        <NavItem href="/projects">Workshops</NavItem>
+        <NavItem href="/press">Media</NavItem>
+        <NavItem href="/contact">Contact</NavItem>
       </ul>
     </nav>
   )
@@ -243,17 +243,17 @@ function LogoPill() {
     <Link
       href="/"
       aria-label="Home"
-      className={`flex h-14 items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
+      className={`flex h-[3.5rem] items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
     >
       <img
         src="/images/catur_logo_dark.svg"
         alt="Sasha Astiadi"
-        className="h-9 w-auto dark:hidden"
+        className="h-[3.3rem] w-auto dark:hidden"
       />
       <img
-        src="/images/catur_logo_light.svg"
+        src="/images/catur_logo_light2.svg"
         alt="Sasha Astiadi"
-        className="hidden h-9 w-auto dark:block"
+        className="hidden h-[3.3rem] w-auto dark:block"
       />
     </Link>
   )

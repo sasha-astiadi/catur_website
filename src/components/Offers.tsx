@@ -48,7 +48,7 @@ export function Offers() {
                 <div key={slideIndex} className="w-full shrink-0">
                   <div className="lg:grid lg:grid-cols-12 lg:gap-x-0">
                     <div className="relative z-10 lg:col-span-6 lg:col-start-1 lg:row-start-1 lg:bg-transparent lg:py-12">
-                      <div aria-hidden="true" className="absolute inset-x-0 h-1/2 bg-zinc-50 dark:bg-zinc-950 lg:hidden" />
+                      <div aria-hidden="true" className="absolute inset-x-0 h-1/2 bg-zinc-50 dark:bg-[#0F1C27] lg:hidden" />
                       <div className="mx-auto max-w-lg px-2 pt-8 sm:max-w-3xl sm:px-0 lg:max-w-none lg:p-0">
                         {slideIndex === 0 ? (
                           <div className="relative w-full rounded-md shadow-2xl">

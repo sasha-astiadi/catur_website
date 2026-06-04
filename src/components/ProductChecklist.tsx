@@ -25,7 +25,7 @@ export function ProductChecklist() {
 
   return (
     <div className="relative w-full overflow-hidden rounded-md shadow-2xl aspect-10/6 sm:aspect-2/1 lg:aspect-video">
-      <div className="absolute inset-0 rounded-md bg-zinc-50/60 ring-1 ring-zinc-900/10 dark:bg-zinc-950/70 dark:ring-white/10" />
+      <div className="absolute inset-0 rounded-md bg-zinc-50/60 ring-1 ring-zinc-900/10 dark:bg-[#0F1C27]/70 dark:ring-white/10" />
       <div className="relative flex h-full w-full items-center justify-center p-4 sm:p-6">
         <ul className="w-full max-w-md space-y-3 text-sm">
           {steps.map((step, index) => {

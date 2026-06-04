@@ -6,7 +6,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
     <>
       <div className="fixed inset-0 flex justify-center sm:px-8">
         <div className="flex w-full max-w-7xl lg:px-4">
-          <div className="w-full bg-[#f8f8f5] dark:bg-black" />
+          <div className="w-full bg-[#f8f8f5] dark:bg-[#0F1C27]" />
         </div>
       </div>
       <div className="relative flex w-full flex-col">
