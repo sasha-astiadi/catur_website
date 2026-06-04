@@ -12,7 +12,7 @@ import { RevealGroup, RevealSection } from '@/components/InteractiveReveal'
 export const metadata: Metadata = {
   title: 'About',
   description:
-    "I'm Sasha Astiadi. Web Architect, Developer & Product Consultant.",
+    "I'm Catur Hari Wijaya. Web Architect, Developer & Product Consultant.",
 }
 
 export default function About() {

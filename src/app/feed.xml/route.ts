@@ -22,7 +22,7 @@ export async function GET(req: Request) {
   const siteUrl = getSiteUrl(req)
 
   let author = {
-    name: 'Sasha Astiadi',
+    name: 'Catur Hari Wijaya',
     email: 'sashaastiadi@gmail.com',
   }
 

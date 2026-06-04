@@ -45,7 +45,7 @@ export function WorkingLanguages() {
 
   return (
     <div className={`rounded-xl p-6 ${newHeroGradientLight} ${newHeroGradientDark}`}>
-      <h2 className="flex text-base font-normal text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-base font-normal text-zinc-900 dark:text-white">
         <TbLanguage className="h-9 w-9 flex-none text-[#9F9FA9] dark:text-[#71717C]" />
         <span className="ml-3">Languages</span>
       </h2>

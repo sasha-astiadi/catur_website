@@ -51,7 +51,7 @@ function Article({
           : 'rounded-xl border border-zinc-200/70 bg-white p-6 ring-1 ring-zinc-100 dark:border-zinc-700/50 dark:bg-zinc-900 dark:ring-zinc-300/20 lg:p-8'
       }
     >
-      <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
+      <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-white">
         <Link href={`/articles/${article.slug}`} className="relative z-10">
           {article.title}
         </Link>
@@ -104,7 +104,7 @@ function Highlighted({ item, grouped }: { item: HighlightedItem; grouped?: boole
             {formatDate(item.date)}
           </Card.Eyebrow>
         )}
-        <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100">
+        <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-white">
           {item.title}
         </h2>
       </Link>
@@ -121,7 +121,7 @@ function HighlightedHeader() {
     <div>
       <Eyebrow>CASE STUDIES</Eyebrow>
       <div className="mt-2 flex items-center justify-between gap-6">
-        <h2 className="text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+        <h2 className="text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
           The Process Behind the{' '}
           <FadeWord
             word="Products"

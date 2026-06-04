@@ -164,7 +164,7 @@ export function Offers() {
                       </div>
 
                       <div className="relative mx-auto max-w-md space-y-4 px-4 py-10 sm:max-w-3xl sm:px-6 sm:py-12 lg:col-span-6 lg:col-start-4 lg:max-w-none lg:p-0">
-                        <h2 id="join-heading" className="text-3xl font-normal tracking-tight text-zinc-900 dark:text-zinc-100">
+                        <h2 id="join-heading" className="text-3xl font-normal tracking-tight text-zinc-900 dark:text-white">
                           {slideIndex === 1
                             ? 'Rebranding & Visual System Implementation'
                             : slideIndex === 2

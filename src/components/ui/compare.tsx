@@ -112,7 +112,7 @@ export function Compare({
           type="button"
           aria-controls={id}
           aria-label="Drag to compare"
-          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-zinc-900 shadow-md ring-1 ring-zinc-900/10 backdrop-blur hover:bg-white dark:bg-zinc-900/90 dark:text-zinc-100 dark:ring-white/10"
+          className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-zinc-900 shadow-md ring-1 ring-zinc-900/10 backdrop-blur hover:bg-white dark:bg-zinc-900/90 dark:text-white dark:ring-white/10"
           onPointerDown={(e) => {
             e.stopPropagation()
             setIsDragging(true)

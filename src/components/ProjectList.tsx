@@ -84,7 +84,7 @@ function ProjectCard({ project }: { project: Project }) {
         <Image src={project.logo} alt="" className="h-9 w-9" unoptimized />
       </div>
 
-      <h2 className="mt-6 text-base font-normal text-zinc-800 dark:text-zinc-100">
+      <h2 className="mt-6 text-base font-normal text-zinc-800 dark:text-white">
         <Card.Link href={project.link.href}>{project.name}</Card.Link>
       </h2>
 

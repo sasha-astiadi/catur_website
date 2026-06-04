@@ -14,6 +14,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
+import { strongGlasgow } from '@/app/fonts'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -150,7 +151,7 @@ function MobileNavigation(
               </PopoverButton>
             </div>
             <nav className="mt-6">
-              <ul className="-my-2 divide-y divide-zinc-100 text-lg text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
+              <ul className={`-my-2 divide-y divide-zinc-100 text-lg text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300 ${strongGlasgow.className}`}>
                 <MobileNavItem href="/about">About</MobileNavItem>
                 <MobileNavItem href="/articles">Music</MobileNavItem>
                 <MobileNavItem href="/projects">Workshops</MobileNavItem>
@@ -198,7 +199,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul
-        className={`flex items-center rounded-xl px-3 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:h-14 md:px-4 md:text-base ${newHeroGradientLight} ${newHeroGradientDark}`}
+        className={`flex items-center rounded-xl px-3 text-xl font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:h-14 md:px-4 md:text-2xl ${strongGlasgow.className}`}
       >
         <NavItem href="/about">About</NavItem>
         <NavItem href="/articles">Music</NavItem>
@@ -243,17 +244,17 @@ function LogoPill() {
     <Link
       href="/"
       aria-label="Home"
-      className={`flex h-[3.5rem] items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
+      className="flex h-[3.5rem] items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4"
     >
       <img
         src="/images/catur_logo_dark.svg"
-        alt="Sasha Astiadi"
-        className="h-[3.3rem] w-auto dark:hidden"
+        alt="Catur Hari Wijaya"
+        className="h-[4.2rem] w-auto dark:hidden"
       />
       <img
         src="/images/catur_logo_light2.svg"
-        alt="Sasha Astiadi"
-        className="hidden h-[3.3rem] w-auto dark:block"
+        alt="Catur Hari Wijaya"
+        className="hidden h-[4.2rem] w-auto dark:block"
       />
     </Link>
   )

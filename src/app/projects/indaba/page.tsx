@@ -2,7 +2,7 @@ import { ProjectLayout } from '@/components/ProjectLayout'
 import thumbnailImage from '@/images/photos/project_threefold.png'
 
 const project = {
-  author: 'Sasha Astiadi',
+  author: 'Catur Hari Wijaya',
   title: 'OurWorld',
   description:
     'OurWorld is a venture creator that supports and builds startups and infrastructure for a decentralized, autonomous digital future.',

@@ -161,9 +161,9 @@ function ToolCard({ tool }: { tool: Tool }) {
     <Card as="li">
       <div className="flex flex-col items-center text-center">
         <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-          <tool.Icon className="h-6 w-6 text-zinc-800 dark:text-zinc-100" />
+          <tool.Icon className="h-6 w-6 text-zinc-800 dark:text-white" />
         </div>
-        <h2 className="mt-2 text-base font-normal text-zinc-800 dark:text-zinc-100">
+        <h2 className="mt-2 text-base font-normal text-zinc-800 dark:text-white">
           {tool.name}
         </h2>
       </div>
@@ -182,7 +182,7 @@ export function TechnologyStack() {
     <section className="py-12">
       <div className="mx-auto max-w-4xl text-center">
         <Eyebrow>TECHNOLOGY STACK</Eyebrow>
-        <h2 className="text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+        <h2 className="text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
           Full-stack Web{' '}
           <FadeWord
             word="Expertise"

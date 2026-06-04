@@ -53,7 +53,7 @@ export const ServicesGrid = () => {
                           aria-hidden="true"
                         />
                       </div>
-                      <p className="text-lg/8 font-normal text-zinc-800 dark:text-zinc-100">
+                      <p className="text-lg/8 font-normal text-zinc-800 dark:text-white">
                         {service.title}
                       </p>
                     </div>

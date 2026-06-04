@@ -71,7 +71,7 @@ function Role({ role, bgColor }: { role: Role; bgColor: string }) {
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-white">
           {role.company}
         </dd>
         <dt className="sr-only">Role</dt>
@@ -141,7 +141,7 @@ export function Resume() {
 
   return (
     <div className={`rounded-xl p-6 ${newHeroGradientLight} ${newHeroGradientDark}`}>
-      <h2 className="flex text-base font-normal text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-base font-normal text-zinc-900 dark:text-white">
         <BriefcaseIcon className="h-9 w-9 flex-none" />
         <span className="ml-3">Working Experiences</span>
       </h2>

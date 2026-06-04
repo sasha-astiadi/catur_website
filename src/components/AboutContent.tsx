@@ -75,8 +75,8 @@ export function AboutBio() {
       <div
         className={`mx-2 overflow-hidden rounded-xl py-12 px-6 sm:px-12 lg:mx-0 ${newHeroGradientLight} ${newHeroGradientDark}`}
       >
-        <h1 className="text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          Hi. I'm Sasha Astiadi. <br></br>
+        <h1 className="text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
+          Hi. I'm Catur Hari Wijaya. <br></br>
           I'm a{' '}
           <span className={libreBodoniItalic}>
             Web{' '}

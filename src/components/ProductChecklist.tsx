@@ -44,7 +44,7 @@ export function ProductChecklist() {
                 <span
                   className={
                     completed
-                      ? 'text-zinc-900/90 transition-colors dark:text-zinc-100'
+                      ? 'text-zinc-900/90 transition-colors dark:text-white'
                       : current
                         ? 'text-zinc-700 transition-colors dark:text-zinc-300'
                         : 'text-zinc-500 transition-colors dark:text-zinc-500'

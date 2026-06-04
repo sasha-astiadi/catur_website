@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import { strongGlasgow } from '@/app/fonts'
 import { ContainerOuter } from '@/components/Container'
 import { Button } from '@/components/Button'
 import { FlipWords } from '@/components/ui/flip-words'
@@ -23,19 +23,19 @@ export function NewHero() {
               <div className="py-8 lg:col-span-6 lg:flex lg:aspect-square lg:flex-col lg:justify-center lg:py-0">
                 <div className="mx-auto max-w-lg lg:mx-0">
                   <div className="hidden sm:mt-24 sm:flex lg:mt-10">
-                    <div className="relative rounded-full px-3 py-1 text-sm/5 text-zinc-600 ring-1 ring-zinc-900/10 hover:ring-zinc-900/20 dark:text-zinc-400 dark:ring-white/10 dark:hover:ring-white/20">
-                      '<span className="font-bold">KOSMOS</span>' - The new album Is Out,{" "}
+                    <div className="relative rounded-full px-3 py-1 text-sm/5 text-white ring-1 ring-zinc-900/10 hover:ring-gray-400/20 dark:text-zinc-400 dark:ring-white/10 dark:hover:ring-white/20">
+                      '<span className="font-bold font-strongGlasgow">KOSMOS</span>' - The new album Is Out,{" "}
                       <a
                         href="https://calendly.com/sashaastiadi/30min"
-                        className={`${libreBodoniItalic} whitespace-nowrap text-zinc-900 dark:text-zinc-100`}
+                        className={`${libreBodoniItalic} whitespace-nowrap text-zinc-900 dark:text-white`}
                       >
                         <span aria-hidden="true" className="absolute inset-0" />
-                        Listen to the new album →
+                        Listen to the new album 
                          <span aria-hidden="true">&rarr;</span>
                       </a>
                     </div>
                   </div>
-                  <h1 className="mt-4 text-4xl font-normal tracking-tight text-pretty text-zinc-900 sm:mt-10 sm:text-5xl dark:text-zinc-100">
+                  <h1 className="mt-4 text-4xl font-normal tracking-tight text-pretty text-zinc-900 sm:mt-10 sm:text-5xl dark:text-white">
                     Multi-instrumentalist weaving global rhythms &
                     <span className={`${libreBodoniItalic} text-[1.2em]`}>
                       {' '}
@@ -54,7 +54,7 @@ export function NewHero() {
                     </Button>
                     <a
                       href="#"
-                      className={`${libreBodoniItalic} text-sm/6 text-zinc-900 dark:text-zinc-100`}
+                      className={`${libreBodoniItalic} text-sm/6 text-zinc-900 dark:text-white`}
                     >
                       Learn more <span aria-hidden="true">→</span>
                     </a>

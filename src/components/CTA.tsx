@@ -12,7 +12,7 @@ export function CTA() {
       >
         <div className="mx-auto max-w-xl text-center">
           <Eyebrow>GET STARTED</Eyebrow>
-          <h2 className="mt-2 text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h2 className="mt-2 text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
             Let’s build something that{' '}
             <FlipWords
               words={['actually works', 'scales cleanly', 'ships fast']}

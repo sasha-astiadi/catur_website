@@ -82,7 +82,7 @@ export const SelectedWorks = () => {
           <div className="py-12 relative px-4">
             <div className="mx-auto max-w-2xl lg:max-w-6xl">
               <Eyebrow>PORTFOLIO</Eyebrow>
-              <p className="mt-2 max-w-2xl text-4xl font-normal tracking-tight text-pretty text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              <p className="mt-2 max-w-2xl text-4xl font-normal tracking-tight text-pretty text-zinc-800 sm:text-5xl dark:text-white">
                 Showcasing Real-World{' '}
                 <FadeWord
                   word="Projects"
@@ -106,7 +106,7 @@ export const SelectedWorks = () => {
                       />
                       {/*  <div className="p-10 pt-4 lg:px-6">
                         <h3 className="text-sm/4 font-normal text-zinc-600 dark:text-zinc-400">{item.eyebrow}</h3>
-                        <p className="mt-2 text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100">
+                        <p className="mt-2 text-lg font-medium tracking-tight text-zinc-800 dark:text-white">
                           {item.title}
                         </p>
                         <p className="mt-2 max-w-lg text-sm/6 text-zinc-600 dark:text-zinc-400">{item.description}</p>

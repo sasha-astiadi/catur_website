@@ -2,7 +2,7 @@ import { ProjectLayout } from '@/components/ProjectLayout'
 import thumbnailImage from '@/images/photos/project_threefold.png'
 
 const project = {
-  author: 'Sasha Astiadi',
+  author: 'Catur Hari Wijaya',
   title: 'ThreeFold',
   description:
     'ThreeFold is a global, decentralized cloud computing platform that allows users to rent out their computing resources to others.',

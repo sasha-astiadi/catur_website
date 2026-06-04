@@ -20,7 +20,7 @@ export function HighlightedCase() {
       <div className="mx-2 overflow-hidden rounded-xl bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 sm:mx-0">
         <div className="relative px-4 lg:px-12 py-12">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-4xlfont-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+            <h2 className="text-4xlfont-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
               Case Studies
             </h2>
             <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
@@ -53,7 +53,7 @@ export function HighlightedCase() {
                   <span>2025</span>
                 </div>
 
-                <h3 className="text-2xlfont-normal text-zinc-800 dark:text-zinc-100 sm:text-3xl lg:text-3xl">
+                <h3 className="text-2xlfont-normal text-zinc-800 dark:text-white sm:text-3xl lg:text-3xl">
                   Why We Chose to Reimagine OurWorld
                 </h3>
 

@@ -52,12 +52,12 @@ export function Footer() {
                 <Link href="/" aria-label="Home" className="inline-flex">
                   <img
                     src="/images/catur_logo_dark.svg"
-                    alt="Sasha Astiadi"
+                    alt="Catur Hari Wijaya"
                     className="h-9 w-auto dark:hidden"
                   />
                   <img
                     src="/images/catur_logo_light2.svg"
-                    alt="Sasha Astiadi"
+                    alt="Catur Hari Wijaya"
                     className="hidden h-9 w-auto dark:block"
                   />
                 </Link>
@@ -94,7 +94,7 @@ export function Footer() {
                 </div>
 
                 <p className=" mx-12 sm:mx-0 text-sm text-zinc-400 dark:text-zinc-500">
-                  &copy; 2026 Sasha Astiadi — Sasha Studio. Headshots by Toby Strauss for <a href="https://www.toracrafts.com" className="underline hover:text-zinc-300 dark:hover:text-zinc-400" target="_blank" rel="noopener noreferrer">Tora Crafts</a>.
+                  &copy; 2026 Catur Hari Wijaya — Sasha Studio. Headshots by Toby Strauss for <a href="https://www.toracrafts.com" className="underline hover:text-zinc-300 dark:hover:text-zinc-400" target="_blank" rel="noopener noreferrer">Tora Crafts</a>.
                 </p>
               </div>
             </ContainerOuter>
