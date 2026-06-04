@@ -5,19 +5,6 @@ import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
 
-<<<<<<< HEAD
-export const metadata: Metadata = {
-  title: {
-    template: '%s - Catur Hari Wijaya',
-    default:
-      'Catur Hari Wijaya - Software designer, founder, and amateur astronaut',
-  },
-  description:
-    'Catur Hari Wijaya creates music as a living journey — rooted in rhythm, guided by movement, and felt through the body before the mind has time to follow. His sound invites listeners into pulse, breath, and trance, opening a space for deep presence and connection.',
-  alternates: {
-    types: {
-      'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
-=======
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://sashaastiadi.site'
 
 export const metadata: Metadata = {
@@ -81,7 +68,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
       'max-video-preview': -1,
->>>>>>> source/main
     },
   },
 }
@@ -92,10 +78,6 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-<<<<<<< HEAD
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
-      <body className="flex h-full bg-zinc-50 dark:bg-black">
-=======
     <html
       lang="en"
       className="h-full antialiased font-sans"
@@ -105,7 +87,6 @@ export default function RootLayout({
         className="flex h-full bg-[#f8f8f5] dark:bg-black"
         suppressHydrationWarning
       >
->>>>>>> source/main
         <Providers>
           <div className="flex w-full">
             <Layout>{children}</Layout>

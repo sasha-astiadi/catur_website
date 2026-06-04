@@ -1,8 +1,4 @@
 import Link from 'next/link'
-<<<<<<< HEAD
-
-import { ContainerInner, ContainerOuter } from '@/components/Container'
-=======
 import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
 
 import { ContainerOuter } from '@/components/Container'
@@ -12,7 +8,6 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
->>>>>>> source/main
 
 function NavLink({
   href,
@@ -24,38 +19,13 @@ function NavLink({
   return (
     <Link
       href={href}
-<<<<<<< HEAD
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
-=======
       className="transition hover:text-teal-600 dark:hover:text-teal-400"
->>>>>>> source/main
     >
       {children}
     </Link>
   )
 }
 
-<<<<<<< HEAD
-export function Footer() {
-  return (
-    <footer className="mt-32 flex-none">
-      <ContainerOuter>
-        <div className="border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40">
-          <ContainerInner>
-            <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-              <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-                <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projects</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
-              </div>
-              <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Catur Hari Wijaya. All rights
-                reserved.
-              </p>
-            </div>
-          </ContainerInner>
-=======
 function SocialLink({
   icon: Icon,
   ...props
@@ -86,7 +56,7 @@ export function Footer() {
                     className="h-9 w-auto dark:hidden"
                   />
                   <img
-                    src="/images/sasha_logo_light.svg"
+                    src="/images/catur_logo_light.svg"
                     alt="Sasha Astiadi"
                     className="hidden h-9 w-auto dark:block"
                   />
@@ -129,7 +99,6 @@ export function Footer() {
               </div>
             </ContainerOuter>
           </div>
->>>>>>> source/main
         </div>
       </ContainerOuter>
     </footer>

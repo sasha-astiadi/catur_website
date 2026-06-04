@@ -9,7 +9,7 @@ import {
   newHeroGradientLight,
 } from '@/components/ui/Texts'
 
-import heroImage from '@/images/hero.webp'
+import heroImage from '@/images/hero1.webp'
 
 export function NewHero() {
   return (

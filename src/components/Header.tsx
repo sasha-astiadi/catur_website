@@ -1,10 +1,6 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-<<<<<<< HEAD
-import Image from 'next/image'
-=======
->>>>>>> source/main
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useTheme } from 'next-themes'
@@ -17,11 +13,7 @@ import {
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-<<<<<<< HEAD
-import avatarImage from '@/images/avatar.jpg'
-=======
 import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
->>>>>>> source/main
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -91,11 +83,6 @@ function MobileNavItem({
   href: string
   children: React.ReactNode
 }) {
-<<<<<<< HEAD
-  return (
-    <li>
-      <PopoverButton as={Link} href={href} className="block py-2">
-=======
   let isActive = usePathname() === href
 
   return (
@@ -110,7 +97,6 @@ function MobileNavItem({
             : 'hover:text-teal-600 dark:hover:text-teal-400',
         )}
       >
->>>>>>> source/main
         {children}
       </PopoverButton>
     </li>
@@ -118,43 +104,6 @@ function MobileNavItem({
 }
 
 function MobileNavigation(
-<<<<<<< HEAD
-  props: React.ComponentPropsWithoutRef<typeof Popover>,
-) {
-  return (
-    <Popover {...props}>
-      <PopoverButton className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
-        Menu
-        <ChevronDownIcon className="ml-3 h-auto w-2 stroke-zinc-500 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
-      </PopoverButton>
-      <PopoverBackdrop
-        transition
-        className="fixed inset-0 z-50 bg-zinc-800/40 backdrop-blur-xs duration-150 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in dark:bg-black/80"
-      />
-      <PopoverPanel
-        focus
-        transition
-        className="fixed inset-x-4 top-8 z-50 origin-top rounded-3xl bg-white p-8 ring-1 ring-zinc-900/5 duration-150 data-closed:scale-95 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in dark:bg-zinc-900 dark:ring-zinc-800"
-      >
-        <div className="flex flex-row-reverse items-center justify-between">
-          <PopoverButton aria-label="Close menu" className="-m-1 p-1">
-            <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
-          </PopoverButton>
-          <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-            Navigation
-          </h2>
-        </div>
-        <nav className="mt-6">
-          <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-            <MobileNavItem href="/about">About</MobileNavItem>
-            <MobileNavItem href="/articles">Articles</MobileNavItem>
-            <MobileNavItem href="/projects">Projects</MobileNavItem>
-            <MobileNavItem href="/speaking">Speaking</MobileNavItem>
-            <MobileNavItem href="/uses">Uses</MobileNavItem>
-          </ul>
-        </nav>
-      </PopoverPanel>
-=======
   props: React.ComponentPropsWithoutRef<typeof Popover>
 ) {
   let pathname = usePathname()
@@ -212,7 +161,6 @@ function MobileNavigation(
           </PopoverPanel>
         </>
       )}
->>>>>>> source/main
     </Popover>
   )
 }
@@ -231,26 +179,15 @@ function NavItem({
       <Link
         href={href}
         className={clsx(
-<<<<<<< HEAD
-          'relative block px-3 py-2 transition',
-          isActive
-            ? 'text-teal-500 dark:text-teal-400'
-            : 'hover:text-teal-500 dark:hover:text-teal-400',
-=======
           'relative flex h-full items-center px-3 py-2 transition md:px-4 md:py-0',
           isActive
             ? 'text-teal-600 dark:text-teal-400'
             : 'hover:text-teal-600 dark:hover:text-teal-400',
->>>>>>> source/main
         )}
       >
         {children}
         {isActive && (
-<<<<<<< HEAD
-          <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
-=======
           <span className="absolute inset-x-1 -bottom-px h-px bg-linear-to-r from-teal-600/0 via-teal-600/40 to-teal-600/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
->>>>>>> source/main
         )}
       </Link>
     </li>
@@ -260,14 +197,6 @@ function NavItem({
 function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
-<<<<<<< HEAD
-      <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/speaking">Speaking</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
-=======
       <ul
         className={`flex items-center rounded-xl px-3 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:h-14 md:px-4 md:text-base ${newHeroGradientLight} ${newHeroGradientDark}`}
       >
@@ -276,7 +205,6 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         <NavItem href="/articles">Articles</NavItem>
         <NavItem href="/projects">Projects</NavItem>
         <NavItem href="/press">Press</NavItem>
->>>>>>> source/main
       </ul>
     </nav>
   )
@@ -295,19 +223,11 @@ function ThemeToggle() {
     <button
       type="button"
       aria-label={mounted ? `Switch to ${otherTheme} theme` : 'Toggle theme'}
-<<<<<<< HEAD
-      className="group rounded-full bg-white/90 px-3 py-2 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20"
-      onClick={() => setTheme(otherTheme)}
-    >
-      <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
-      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition not-[@media_(prefers-color-scheme:dark)]:fill-teal-400/10 not-[@media_(prefers-color-scheme:dark)]:stroke-teal-500 dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400" />
-=======
       className={`group flex h-14 items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
       onClick={() => setTheme(otherTheme)}
     >
       <SunIcon className="h-9 w-9 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
       <MoonIcon className="hidden h-9 w-9 fill-zinc-700 stroke-zinc-500 transition not-[@media_(prefers-color-scheme:dark)]:fill-teal-400/10 not-[@media_(prefers-color-scheme:dark)]:stroke-teal-500 dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400" />
->>>>>>> source/main
     </button>
   )
 }
@@ -318,50 +238,11 @@ function clamp(number: number, a: number, b: number) {
   return Math.min(Math.max(number, min), max)
 }
 
-<<<<<<< HEAD
-function AvatarContainer({
-  className,
-  ...props
-}: React.ComponentPropsWithoutRef<'div'>) {
-  return (
-    <div
-      className={clsx(
-        className,
-        'h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm dark:bg-zinc-800/90 dark:ring-white/10',
-      )}
-      {...props}
-    />
-  )
-}
-
-function Avatar({
-  large = false,
-  className,
-  ...props
-}: Omit<React.ComponentPropsWithoutRef<typeof Link>, 'href'> & {
-  large?: boolean
-}) {
-=======
 function LogoPill() {
->>>>>>> source/main
   return (
     <Link
       href="/"
       aria-label="Home"
-<<<<<<< HEAD
-      className={clsx(className, 'pointer-events-auto')}
-      {...props}
-    >
-      <Image
-        src={avatarImage}
-        alt=""
-        sizes={large ? '4rem' : '2.25rem'}
-        className={clsx(
-          'rounded-full bg-zinc-100 object-cover dark:bg-zinc-800',
-          large ? 'h-16 w-16' : 'h-9 w-9',
-        )}
-        priority
-=======
       className={`flex h-14 items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
     >
       <img
@@ -370,10 +251,9 @@ function LogoPill() {
         className="h-9 w-auto dark:hidden"
       />
       <img
-        src="/images/sasha_logo_light.svg"
+        src="/images/catur_logo_light.svg"
         alt="Sasha Astiadi"
         className="hidden h-9 w-auto dark:block"
->>>>>>> source/main
       />
     </Link>
   )
@@ -387,11 +267,7 @@ export function Header() {
   let isInitial = useRef(true)
 
   useEffect(() => {
-<<<<<<< HEAD
-    let downDelay = avatarRef.current?.offsetTop ?? 0
-=======
     let downDelay = (avatarRef.current?.offsetTop ?? 0) / 2
->>>>>>> source/main
     let upDelay = 64
 
     function setProperty(property: string, value: string) {
@@ -449,11 +325,7 @@ export function Header() {
       }
 
       let fromScale = 1
-<<<<<<< HEAD
-      let toScale = 36 / 64
-=======
       let toScale = 72 / 128
->>>>>>> source/main
       let fromX = 0
       let toX = 2 / 16
 
@@ -507,52 +379,13 @@ export function Header() {
           <>
             <div
               ref={avatarRef}
-<<<<<<< HEAD
-              className="order-last mt-[calc(--spacing(16)-(--spacing(3)))]"
-            />
-            <Container
-              className="top-0 order-last -mb-3 pt-3"
-              style={{
-                position:
-                  'var(--header-position)' as React.CSSProperties['position'],
-              }}
-            >
-              <div
-                className="top-(--avatar-top,--spacing(3)) w-full"
-                style={{
-                  position:
-                    'var(--header-inner-position)' as React.CSSProperties['position'],
-                }}
-              >
-                <div className="relative">
-                  <AvatarContainer
-                    className="absolute top-3 left-0 origin-left transition-opacity"
-                    style={{
-                      opacity: 'var(--avatar-border-opacity, 0)',
-                      transform: 'var(--avatar-border-transform)',
-                    }}
-                  />
-                  <Avatar
-                    large
-                    className="block h-16 w-16 origin-left"
-                    style={{ transform: 'var(--avatar-image-transform)' }}
-                  />
-                </div>
-              </div>
-            </Container>
-=======
               className="order-last mt-1.5 sm:mt-3.5"
             />
->>>>>>> source/main
           </>
         )}
         <div
           ref={headerRef}
-<<<<<<< HEAD
-          className="top-0 z-10 h-16 pt-6"
-=======
           className="top-0 z-10 h-16 pt-6 md:h-24 md:pt-9"
->>>>>>> source/main
           style={{
             position:
               'var(--header-position)' as React.CSSProperties['position'],
@@ -565,21 +398,6 @@ export function Header() {
                 'var(--header-inner-position)' as React.CSSProperties['position'],
             }}
           >
-<<<<<<< HEAD
-            <div className="relative flex gap-4">
-              <div className="flex flex-1">
-                {!isHomePage && (
-                  <AvatarContainer>
-                    <Avatar />
-                  </AvatarContainer>
-                )}
-              </div>
-              <div className="flex flex-1 justify-end md:justify-center">
-                <MobileNavigation className="pointer-events-auto md:hidden" />
-                <DesktopNavigation className="pointer-events-auto hidden md:block" />
-              </div>
-              <div className="flex justify-end md:flex-1">
-=======
             <div className="relative flex items-center justify-between md:hidden">
               <div className="pointer-events-auto">
                 <LogoPill />
@@ -601,7 +419,6 @@ export function Header() {
                 <DesktopNavigation className="pointer-events-auto" />
               </div>
               <div className="flex justify-end">
->>>>>>> source/main
                 <div className="pointer-events-auto">
                   <ThemeToggle />
                 </div>

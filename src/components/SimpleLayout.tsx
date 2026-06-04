@@ -1,6 +1,4 @@
 import { Container } from '@/components/Container'
-<<<<<<< HEAD
-=======
 import { libreBodoniItalic } from '@/components/ui/Texts'
 import { RevealGroup, RevealSection } from '@/components/InteractiveReveal'
 import { CTA } from '@/components/CTA'
@@ -21,37 +19,18 @@ function renderStyledTitle(title: string) {
     return <span key={index}>{part}</span>
   })
 }
->>>>>>> source/main
 
 export function SimpleLayout({
   title,
   intro,
   children,
-<<<<<<< HEAD
-=======
   reveal,
   cta,
   ctaWidth,
->>>>>>> source/main
 }: {
   title: string
   intro: string
   children?: React.ReactNode
-<<<<<<< HEAD
-}) {
-  return (
-    <Container className="mt-16 sm:mt-32">
-      <header className="max-w-2xl">
-        <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-          {title}
-        </h1>
-        <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          {intro}
-        </p>
-      </header>
-      {children && <div className="mt-16 sm:mt-20">{children}</div>}
-    </Container>
-=======
   reveal?: boolean
   cta?: boolean
   ctaWidth?: 'content' | 'footer'
@@ -116,6 +95,5 @@ export function SimpleLayout({
         </div>
       )}
     </>
->>>>>>> source/main
   )
 }

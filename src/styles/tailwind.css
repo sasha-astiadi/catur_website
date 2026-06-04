@@ -1,18 +1,12 @@
 @import 'tailwindcss';
 @import './prism.css' layer(components);
-<<<<<<< HEAD
-=======
 @import "tw-animate-css";
->>>>>>> source/main
 
 @plugin '@tailwindcss/typography';
 @config '../../typography.ts';
 
 @custom-variant dark (&:where(.dark, .dark *));
 
-<<<<<<< HEAD
-@theme {
-=======
 @layer base {
   p {
     @apply font-light;
@@ -45,7 +39,6 @@
 
 @theme {
   --animate-marquee: marquee 30s linear infinite;
->>>>>>> source/main
   --text-xs: 0.8125rem;
   --text-xs--line-height: 1.5rem;
   --text-sm: 0.875rem;
@@ -73,8 +66,6 @@
   --text-9xl: 8rem;
   --text-9xl--line-height: 1;
 }
-<<<<<<< HEAD
-=======
 
 @keyframes marquee {
   0% {
@@ -206,4 +197,3 @@
     @apply text-teal-600 dark:text-teal-400;
   }
 }
->>>>>>> source/main
