@@ -246,7 +246,7 @@ function LogoPill() {
       className={`flex h-14 items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
     >
       <img
-        src="/images/sasha_logo_dark.svg"
+        src="/images/catur_logo_dark.svg"
         alt="Sasha Astiadi"
         className="h-9 w-auto dark:hidden"
       />

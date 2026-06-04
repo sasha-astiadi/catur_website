@@ -51,7 +51,7 @@ export function Footer() {
               <div className="flex flex-col items-center justify-center gap-3 text-center">
                 <Link href="/" aria-label="Home" className="inline-flex">
                   <img
-                    src="/images/sasha_logo_dark.svg"
+                    src="/images/catur_logo_dark.svg"
                     alt="Sasha Astiadi"
                     className="h-9 w-auto dark:hidden"
                   />

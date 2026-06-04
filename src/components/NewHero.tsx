@@ -34,21 +34,18 @@ export function NewHero() {
                       </a>
                     </div>
                   </div>
-                  <h1 className="mt-4 text-5xl font-normal tracking-tight text-pretty text-zinc-900 sm:mt-10 sm:text-6xl dark:text-zinc-100">
-                    Design & Build High-performing Websites
-                    <br />
+                  <h1 className="mt-4 text-4xl font-normal tracking-tight text-pretty text-zinc-900 sm:mt-10 sm:text-5xl dark:text-zinc-100">
+                    Multi-instrumentalist weaving global rhythms &
                     <span className={`${libreBodoniItalic} text-[1.2em]`}>
-                      that{' '}
+                      {' '}
                       <FlipWords
-                        words={['scale', 'grow', 'evolve', 'convert', 'last']}
+                        words={['ancient indonesian wisdom']}
                         className="px-0"
                       />
-                      .
                     </span>
                   </h1>
                   <p className="mt-6 text-lg font-light text-pretty text-zinc-600 sm:text-lg/8 dark:text-zinc-400">
-                    As a web expert, I help teams plan and execute clear, scalable web applications; drawing on over five
-              years of experience across product planning, branding, UX, and engineering.
+                   A multi-instrumentalist, songwriter, and lifelong student of ancestral traditions, Catur draws inspiration from Indonesia, India, the Middle East, North Africa, and West Africa. Strings, flutes, voices, and earthy percussion intertwine into immersive soundscapes where ancient melodies meet contemporary expression.
                   </p>
                   <div className="mt-10 flex items-center gap-x-6">
                     <Button href="#" variant="secondary">
