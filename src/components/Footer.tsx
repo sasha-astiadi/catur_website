@@ -3,10 +3,10 @@ import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts
 
 import { ContainerOuter } from '@/components/Container'
 import {
-  GitHubIcon,
   InstagramIcon,
-  LinkedInIcon,
-  XIcon,
+  YouTubeIcon,
+  FacebookIcon,
+  LinktreeIcon,
 } from '@/components/SocialIcons'
 
 function NavLink({
@@ -52,49 +52,48 @@ export function Footer() {
                 <Link href="/" aria-label="Home" className="inline-flex">
                   <img
                     src="/images/catur_logo_dark.svg"
-                    alt="Sasha Astiadi"
-                    className="h-9 w-auto dark:hidden"
+                    alt="Catur Hari Wijaya"
+                    className="h-9 lg:h-[4.5rem] w-auto dark:hidden"
                   />
                   <img
-                    src="/images/catur_logo_light.svg"
-                    alt="Sasha Astiadi"
-                    className="hidden h-9 w-auto dark:block"
+                    src="/images/catur_logo_light2.svg"
+                    alt="Catur Hari Wijaya"
+                    className="hidden h-9 lg:h-[4.5rem] w-auto dark:block"
                   />
                 </Link>
 
-                <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-normal text-zinc-800 dark:text-zinc-200">
+                <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-normal text-zinc-800 dark:text-zinc-300">
                   <NavLink href="/">Home</NavLink>
                   <NavLink href="/about">About</NavLink>
-                  <NavLink href="/articles">Articles</NavLink>
-                  <NavLink href="/projects">Projects</NavLink>
-                  <NavLink href="/press">Press</NavLink>
+                  <NavLink href="/discography">Discography</NavLink>
+                  <NavLink href="/ubuddrum">Workshops</NavLink>
                 </nav>
 
                 <div className="flex justify-center gap-6">
                   <SocialLink
-                    href="https://x.com/sashatigresa"
-                    aria-label="Follow on X"
-                    icon={XIcon}
-                  />
-                  <SocialLink
-                    href="https://www.instagram.com/sashatigresa"
+                    href="https://www.instagram.com/caturhariwijaya"
                     aria-label="Follow on Instagram"
                     icon={InstagramIcon}
                   />
                   <SocialLink
-                    href="https://github.com/sasha-astiadi"
-                    aria-label="Follow on GitHub"
-                    icon={GitHubIcon}
+                    href="https://www.youtube.com/@caturhariwijaya"
+                    aria-label="Follow on YouTube"
+                    icon={YouTubeIcon}
                   />
                   <SocialLink
-                    href="https://www.linkedin.com/in/sastiadi/"
-                    aria-label="Follow on LinkedIn"
-                    icon={LinkedInIcon}
+                    href="https://www.facebook.com/CaturHariwijayaMusic/"
+                    aria-label="Follow on Facebook"
+                    icon={FacebookIcon}
+                  />
+                  <SocialLink
+                    href="https://linktr.ee/caturhariwijaya"
+                    aria-label="Linktree"
+                    icon={LinktreeIcon}
                   />
                 </div>
 
                 <p className=" mx-12 sm:mx-0 text-sm text-zinc-400 dark:text-zinc-500">
-                  &copy; 2026 Sasha Astiadi — Sasha Studio. Headshots by Toby Strauss for <a href="https://www.toracrafts.com" className="underline hover:text-zinc-300 dark:hover:text-zinc-400" target="_blank" rel="noopener noreferrer">Tora Crafts</a>.
+                  &copy; 2026 Catur Hari Wijaya.
                 </p>
               </div>
             </ContainerOuter>

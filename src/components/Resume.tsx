@@ -1,159 +1,43 @@
-import Image, { type ImageProps } from 'next/image'
-
-import { Button } from '@/components/Button'
+import Image from 'next/image'
+import Link from 'next/link'
 import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
-import logoOurWorld from '@/images/logos/resume/ourworld.jpeg'
-import logoThreeFold from '@/images/logos/resume/threefold.jpeg'
-import logoHere from '@/images/logos/resume/here.jpeg'
-import logoVolkswagen from '@/images/logos/resume/volkswagen.jpeg'
-import logoGoethe from '@/images/logos/resume/goethe.jpeg'
+import { strongGlasgow } from '@/app/fonts'
 
-function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+function LinktreeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path
-        d="M2.75 9.75a3 3 0 0 1 3-3h12.5a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3H5.75a3 3 0 0 1-3-3v-8.5Z"
-        className="fill-zinc-100 stroke-zinc-400 dark:fill-zinc-100/10 dark:stroke-zinc-500"
-      />
-      <path
-        d="M3 14.25h6.249c.484 0 .952-.002 1.316.319l.777.682a.996.996 0 0 0 1.316 0l.777-.682c.364-.32.832-.319 1.316-.319H21M8.75 6.5V4.75a2 2 0 0 1 2-2h2.5a2 2 0 0 1 2 2V6.5"
-        className="stroke-zinc-400 dark:stroke-zinc-500"
-      />
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M7.953 15.066l-.038.001a.75.75 0 01-.038-1.5c1.422-.036 2.678-.52 3.728-1.44a.75.75 0 01.99 1.127c-1.32 1.156-2.88 1.76-4.642 1.812zm8.132 0c-1.762-.052-3.322-.656-4.642-1.812a.75.75 0 01.99-1.127c1.05.92 2.306 1.404 3.728 1.44a.75.75 0 01-.038 1.5l-.038-.001zM12 18.75a.75.75 0 01-.75-.75v-4.5a.75.75 0 011.5 0V18a.75.75 0 01-.75.75zm0-15a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0V4.5A.75.75 0 0112 3.75zm-3.75 6a.75.75 0 01-.75-.75V6.75a.75.75 0 011.5 0V9a.75.75 0 01-.75.75zm7.5 0a.75.75 0 01-.75-.75V6.75a.75.75 0 011.5 0V9a.75.75 0 01-.75.75zM12 24C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
     </svg>
-  )
-}
-
-function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
-  return (
-    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
-      <path
-        d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-interface Role {
-  company: string
-  title: string
-  logo: ImageProps['src']
-  start: string | { label: string; dateTime: string }
-  end: string | { label: string; dateTime: string }
-}
-
-function Role({ role, bgColor }: { role: Role; bgColor: string }) {
-  const startLabel =
-    typeof role.start === 'string' ? role.start : role.start.label
-  const startDate =
-    typeof role.start === 'string' ? role.start : role.start.dateTime
-
-  const endLabel = typeof role.end === 'string' ? role.end : role.end.label
-  const endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
-
-  return (
-    <li className="flex gap-4">
-      <div 
-        className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0"
-        style={{ backgroundColor: bgColor }}
-      >
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
-      </div>
-      <dl className="flex flex-auto flex-wrap gap-x-2">
-        <dt className="sr-only">Company</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
-          {role.company}
-        </dd>
-        <dt className="sr-only">Role</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
-          {role.title}
-        </dd>
-        <dt className="sr-only">Date</dt>
-        <dd
-          className="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
-          aria-label={`${startLabel} until ${endLabel}`}
-        >
-          <time dateTime={startDate}>{startLabel}</time>{' '}
-          <span aria-hidden="true">—</span>{' '}
-          <time dateTime={endDate}>{endLabel}</time>
-        </dd>
-      </dl>
-    </li>
   )
 }
 
 export function Resume() {
-  const resume: Array<Role & { bgColor: string }> = [
-    {
-      company: 'OurWorld Holding',
-      title: 'Web Architect',
-      logo: logoOurWorld,
-      start: '2023',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
-      bgColor: '#000000',
-    },
-    {
-      company: 'ThreeFold Foundation',
-      title: 'Front-end / Web Developer',
-      logo: logoThreeFold,
-      start: '2020',
-      end: '2023',
-      bgColor: '#000000',
-    },
-    {
-      company: 'HERE Technologies',
-      title: 'UX Researcher',
-      logo: logoHere,
-      start: '2019',
-      end: '2020',
-      bgColor: '#163947',
-    },
-    {
-      company: 'Volkswagen Commercial Vehicles',
-      title: 'UX / UI Designer',
-      logo: logoVolkswagen,
-      start: '2018',
-      end: '2019',
-      bgColor: '#ffffff',
-    },
-    {
-      company: 'Goethe-Institut',
-      title: 'UX / UI Designer',
-      logo: logoGoethe,
-      start: '2019',
-      end: '2019',
-      bgColor: '#A1C814',
-    },
-  ]
-
   return (
-    <div className={`rounded-xl p-6 ${newHeroGradientLight} ${newHeroGradientDark}`}>
-      <h2 className="flex text-base font-normal text-zinc-900 dark:text-zinc-100">
-        <BriefcaseIcon className="h-9 w-9 flex-none" />
-        <span className="ml-3">Working Experiences</span>
-      </h2>
-      <ol className="mt-6 space-y-4">
-        {resume.map((role, roleIndex) => (
-          <Role key={roleIndex} role={role} bgColor={role.bgColor} />
-        ))}
-      </ol>
-      <Button href="#" variant="secondary" className="group mt-6 w-full">
-        Download CV
-        <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button>
+    <div className={`rounded-xl overflow-hidden h-full flex flex-col ${newHeroGradientLight} ${newHeroGradientDark}`}>
+      <Image
+        src="/images/linktree.jpg"
+        alt="Catur Hariwijaya"
+        width={400}
+        height={400}
+        className="w-full object-cover"
+      />
+      <div className="p-6 flex-1 flex flex-col">
+        <h2 className={`text-xl text-zinc-900 dark:text-white ${strongGlasgow.className}`}>
+          Connect & Explore
+        </h2>
+        <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-300">
+          Find all links to music, events, and collaborations in one place.
+        </p>
+        <Link
+          href="https://linktr.ee/caturhariwijaya"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-auto flex w-full items-center justify-center gap-2 rounded-lg bg-zinc-900 px-4 py-3 text-sm font-medium text-white transition hover:bg-zinc-700 dark:bg-white dark:text-zinc-900 dark:hover:bg-zinc-200"
+        >
+          <LinktreeIcon className="h-5 w-5 fill-current" />
+          View Linktree
+        </Link>
+      </div>
     </div>
   )
 }

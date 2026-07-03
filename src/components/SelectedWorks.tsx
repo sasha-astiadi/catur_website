@@ -1,120 +1,71 @@
-'use client'
-
+import Image from 'next/image'
+import Link from 'next/link'
 import { ContainerOuter } from '@/components/Container'
-import { FadeWord } from '@/components/ui/fade-word'
-import { useRevealIsActive } from '@/components/InteractiveReveal'
 import {
-  Eyebrow,
-  libreBodoniItalic,
   newHeroGradientDark,
   newHeroGradientLight,
 } from '@/components/ui/Texts'
+import { strongGlasgow } from '@/app/fonts'
 
 const items = [
   {
-    eyebrow: 'Performance',
-    title: 'Lightning-fast builds',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida justo et nulla efficitur, maximus egestas sem pellentesque.',
-    imgSrc: '/images/projects/ourworld/project_ow.png',
-    imgClassName: 'aspect-[16/9] w-full object-cover object-left sm:aspect-auto sm:h-80',
-    wrapperClassName: 'lg:col-span-3',
-    bgClassName: '',
-    innerClassName: '',
-    outlineClassName: '',
+    title: 'Ubud Drum Workshops',
+    imgSrc: '/images/ubuddrum.jpg',
+    href: '/workshops',
+    external: false,
   },
   {
-    eyebrow: 'Releases',
-    title: 'Push to deploy',
-    description:
-      'Curabitur auctor, ex quis auctor venenatis, eros arcu rhoncus massa, laoreet dapibus ex elit vitae odio.',
-    imgSrc: '/images/projects/threefold/project_threefold.png',
-    imgClassName: 'aspect-[16/9] w-full object-cover object-left sm:aspect-auto sm:h-72 lg:object-right',
-    wrapperClassName: 'lg:col-span-3',
-    bgClassName: '',
-    innerClassName: '',
-    outlineClassName: '',
+    title: 'Ylantar Sound Alchemy',
+    imgSrc: '/images/ylantar.jpg',
+    href: 'https://www.instagram.com/ylantar_soundalchemy/',
+    external: true,
   },
   {
-    eyebrow: 'Speed',
-    title: 'Built for power users',
-    description: 'Sed congue eros non finibus molestie. Vestibulum euismod augue.',
-    imgSrc: '/images/projects/maison/project_maison.png',
-    imgClassName: 'aspect-[16/9] w-full object-cover object-left sm:aspect-auto sm:h-80 lg:h-64',
-    wrapperClassName: 'lg:col-span-2 lg:self-start',
-    bgClassName: '',
-    innerClassName: 'lg:h-auto',
-    outlineClassName: '',
-  },
-  {
-    eyebrow: 'Integrations',
-    title: 'Connect your favorite tools',
-    description: 'Maecenas at augue sed elit dictum vulputate, in nisi aliquam maximus arcu.',
-    imgSrc: '/images/projects/indaba/project_indaba.png',
-    imgClassName: 'aspect-[16/9] w-full object-cover sm:aspect-auto sm:h-80 lg:h-64',
-    wrapperClassName: 'lg:col-span-2 lg:self-start',
-    bgClassName: '',
-    innerClassName: 'lg:h-auto',
-    outlineClassName: '',
-  },
-  {
-    eyebrow: 'Network',
-    title: 'Globally distributed CDN',
-    description: 'Aenean vulputate justo commodo auctor vehicula in malesuada semper.',
-    imgSrc: '/images/projects/mycelium/project_mycelium.png',
-    imgClassName: 'aspect-[16/9] w-full object-cover sm:aspect-auto sm:h-80 lg:h-64',
-    wrapperClassName: 'lg:col-span-2 lg:self-start',
-    bgClassName: '',
-    innerClassName: 'lg:h-auto',
-    outlineClassName: '',
+    title: 'Konondo Studio',
+    imgSrc: '/images/konondo.jpg',
+    href: 'https://www.instagram.com/konondo.studio/',
+    external: true,
   },
 ]
 
 export const SelectedWorks = () => {
-  const isActive = useRevealIsActive('works')
-
   return (
-    <div className="lg:pb-0 pb-12">
+    <div className="py-2 sm:py-6">
       <ContainerOuter>
         <div
           className={`mx-2 overflow-hidden rounded-xl sm:mx-0 ${newHeroGradientLight} ${newHeroGradientDark}`}
         >
-          <div className="py-12 relative px-4">
-            <div className="mx-auto max-w-2xl lg:max-w-6xl">
-              <Eyebrow>PORTFOLIO</Eyebrow>
-              <p className="mt-2 max-w-2xl text-4xl font-normal tracking-tight text-pretty text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                Showcasing Real-World{' '}
-                <FadeWord
-                  word="Projects"
-                  className={libreBodoniItalic}
-                  playTrigger={isActive}
-                />
-              </p>
-              <div className="mt-4 grid grid-cols-1 gap-4 sm:mt-8 lg:grid-cols-6 lg:grid-rows-2">
+          <div className="py-8 relative px-4 sm:px-8 lg:px-12">
+            <div className="mx-auto max-w-3xl">
+              <div className="text-center mb-8">
+                <h2 className={`text-4xl tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
+                  Projects & Collaborations
+                </h2>
+              </div>
+              <div className="grid grid-cols-3 gap-4">
                 {items.map((item) => (
-                  <div key={item.eyebrow} className={`relative ${item.wrapperClassName}`}>
-                    <div
-                      className={`absolute inset-0 rounded-xl bg-zinc-100 dark:bg-zinc-800 ${item.bgClassName}`}
-                    />
-                    <div
-                      className={`relative flex h-full flex-col overflow-hidden rounded-xl ${item.innerClassName}`}
-                    >
-                      <img
-                        alt=""
+                  <Link
+                    key={item.title}
+                    href={item.href}
+                    target={item.external ? '_blank' : undefined}
+                    rel={item.external ? 'noopener noreferrer' : undefined}
+                    className="group relative block overflow-hidden rounded-full"
+                  >
+                    <div className="aspect-square">
+                      <Image
+                        alt={item.title}
                         src={item.imgSrc}
-                        className={`${item.imgClassName} rounded-md object-cover object-center!`}
+                        fill
+                        sizes="(min-width: 640px) 33vw, 100vw"
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
-                      {/*  <div className="p-10 pt-4 lg:px-6">
-                        <h3 className="text-sm/4 font-normal text-zinc-600 dark:text-zinc-400">{item.eyebrow}</h3>
-                        <p className="mt-2 text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100">
-                          {item.title}
-                        </p>
-                        <p className="mt-2 max-w-lg text-sm/6 text-zinc-600 dark:text-zinc-400">{item.description}</p>
-                      </div>
-                      */}
                     </div>
-                    <div className={`pointer-events-none absolute inset-0 rounded-xl ${item.outlineClassName}`} />
-                  </div>
+                    <div className="absolute inset-0 flex items-end justify-center rounded-full bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 pb-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      <span className={`text-lg text-white text-center ${strongGlasgow.className}`}>
+                        {item.title}
+                      </span>
+                    </div>
+                  </Link>
                 ))}
               </div>
             </div>

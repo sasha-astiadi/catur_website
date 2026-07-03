@@ -14,6 +14,7 @@ import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
 import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
+import { strongGlasgow } from '@/app/fonts'
 
 function CloseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -110,11 +111,9 @@ function MobileNavigation(
   let pageTitles: Record<string, string> = {
     '/': 'Home',
     '/about': 'About',
-    '/articles': 'Articles',
-    '/projects': 'Projects',
-    '/press': 'Press',
-    '/uses': 'Uses',
-  }
+    '/discography': 'Discography',
+    '/ubuddrum': 'Workshops',
+      }
 
   let pageTitle = (pathname ? pageTitles[pathname] : undefined) ?? 'Menu'
 
@@ -123,7 +122,7 @@ function MobileNavigation(
       {({ open }) => (
         <>
           <PopoverButton
-            className={`group flex h-14 items-center rounded-xl px-4 py-0 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
+            className={`group flex h-14 items-center rounded-xl px-4 py-0 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-300 md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
           >
             <span className="text-base font-semibold text-teal-600 dark:text-teal-400">
               {pageTitle}
@@ -142,20 +141,20 @@ function MobileNavigation(
           <PopoverPanel
             focus
             transition
-            className="fixed inset-x-4 top-8 z-50 origin-top rounded-xl bg-white bg-linear-to-b from-[#ffffff] to-[#ffffff]/25 p-8 duration-150 data-closed:scale-95 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in dark:bg-zinc-900 dark:bg-linear-to-b dark:from-[#18181B] dark:to-[#18181B]/10 dark:ring-zinc-800"
+            className="fixed inset-x-4 top-8 z-50 origin-top rounded-xl bg-white bg-linear-to-b from-[#ffffff] to-[#ffffff]/25 p-8 duration-150 data-closed:scale-95 data-closed:opacity-0 data-enter:ease-out data-leave:ease-in dark:bg-zinc-900 dark:bg-linear-to-b dark:from-[#125C52] dark:to-[#125C52]/10 dark:ring-zinc-800"
           >
             <div className="flex flex-row-reverse items-center justify-between">
               <PopoverButton aria-label="Close menu" className="-m-1 p-1">
-                <CloseIcon className="h-9 w-9 text-zinc-500 dark:text-zinc-400" />
+                <CloseIcon className="h-9 w-9 text-zinc-500 dark:text-zinc-300" />
               </PopoverButton>
             </div>
             <nav className="mt-6">
-              <ul className="-my-2 divide-y divide-zinc-100 text-lg text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/">Home</MobileNavItem>
+              <ul className={`-my-2 divide-y divide-zinc-100 text-lg text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300 ${strongGlasgow.className}`}>
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Articles</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/press">Press</MobileNavItem>
+                <MobileNavItem href="/discography">Discography</MobileNavItem>
+                <MobileNavItem href="/ubuddrum">Workshops</MobileNavItem>
+                <li className="block py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Media</li>
+                <li className="block py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Contact</li>
               </ul>
             </nav>
           </PopoverPanel>
@@ -198,13 +197,13 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul
-        className={`flex items-center rounded-xl px-3 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:h-14 md:px-4 md:text-base ${newHeroGradientLight} ${newHeroGradientDark}`}
+        className={`flex items-center rounded-xl px-3 text-xl font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-300 md:h-14 md:px-4 md:text-2xl ${strongGlasgow.className}`}
       >
-        <NavItem href="/">Home</NavItem>
         <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/press">Press</NavItem>
+        <NavItem href="/discography">Discography</NavItem>
+        <NavItem href="/ubuddrum">Workshops</NavItem>
+        <li className="relative block px-3 py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Media</li>
+        <li className="relative block px-3 py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Contact</li>
       </ul>
     </nav>
   )
@@ -243,17 +242,17 @@ function LogoPill() {
     <Link
       href="/"
       aria-label="Home"
-      className={`flex h-14 items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
+      className="flex h-[3.5rem] lg:h-[4rem] items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4"
     >
       <img
         src="/images/catur_logo_dark.svg"
-        alt="Sasha Astiadi"
-        className="h-9 w-auto dark:hidden"
+        alt="Catur Hari Wijaya"
+        className="h-[4.2rem] lg:h-[4.83rem] w-auto dark:hidden"
       />
       <img
-        src="/images/catur_logo_light.svg"
-        alt="Sasha Astiadi"
-        className="hidden h-9 w-auto dark:block"
+        src="/images/catur_logo_light2.svg"
+        alt="Catur Hari Wijaya"
+        className="hidden h-[4.2rem] lg:h-[4.83rem] w-auto dark:block"
       />
     </Link>
   )

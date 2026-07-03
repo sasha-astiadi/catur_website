@@ -7,6 +7,7 @@ import { AppContext } from '@/app/providers'
 import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 import { formatDate } from '@/lib/formatDate'
+import { strongGlasgow } from '@/app/fonts'
 
 function ArrowLeftIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -66,17 +67,17 @@ export function CaseStudyLayout({
                 <span className="mx-2">•</span>
                 <time dateTime={casestudy.date}>{formatDate(casestudy.date)}</time>
               </div>
-              <h1 className="mt-6 text-4xlfont-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+              <h1 className={`mt-6 text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
                 {casestudy.title}
               </h1>
-              <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+              <p className="mt-6 text-base text-zinc-600 dark:text-zinc-300">
                 {casestudy.description}
               </p>
               <div className="mt-6 flex flex-wrap gap-2">
                 {casestudy.tags.map((tag) => (
                   <span
                     key={tag}
-                    className="inline-flex items-center rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-800 dark:bg-zinc-800 dark:text-zinc-200"
+                    className="inline-flex items-center rounded-full bg-zinc-100 px-3 py-1 text-xs font-medium text-zinc-800 dark:bg-zinc-800 dark:text-zinc-300"
                   >
                     {tag}
                   </span>

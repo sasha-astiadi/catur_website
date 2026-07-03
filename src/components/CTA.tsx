@@ -1,7 +1,8 @@
 import { Button } from '@/components/Button'
 import { ContainerOuter } from '@/components/Container'
 import { FlipWords } from '@/components/ui/flip-words'
-import { Eyebrow, libreBodoniItalic } from '@/components/ui/Texts'
+import { Eyebrow } from '@/components/ui/Texts'
+import { strongGlasgow } from '@/app/fonts'
 import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
 
 export function CTA() {
@@ -12,14 +13,14 @@ export function CTA() {
       >
         <div className="mx-auto max-w-xl text-center">
           <Eyebrow>GET STARTED</Eyebrow>
-          <h2 className="mt-2 text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
+          <h2 className={`mt-2 text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
             Let’s build something that{' '}
             <FlipWords
               words={['actually works', 'scales cleanly', 'ships fast']}
-              className={`${libreBodoniItalic} px-0`}
+              className={`${strongGlasgow.className} px-0`}
             />
           </h2>
-          <p className="mt-4 text-lg/8 font-light text-zinc-600 dark:text-zinc-400">
+          <p className="mt-4 text-lg/8 font-light text-zinc-600 dark:text-zinc-300">
             Book a free 30-minute consultation to explore your project.
           </p>
           <div className="mt-8 flex justify-center">

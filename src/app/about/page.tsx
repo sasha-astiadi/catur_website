@@ -6,13 +6,12 @@ import {
   AboutBio,
   AboutSocialLinks,
 } from '@/components/AboutContent'
-import { CTA } from '@/components/CTA'
 import { RevealGroup, RevealSection } from '@/components/InteractiveReveal'
 
 export const metadata: Metadata = {
   title: 'About',
   description:
-    "I'm Sasha Astiadi. Web Architect, Developer & Product Consultant.",
+    "I'm Catur Hari Wijaya. Web Architect, Developer & Product Consultant.",
 }
 
 export default function About() {
@@ -33,11 +32,6 @@ export default function About() {
               </RevealSection>
             </div>
           </div>
-          <RevealSection id="about-cta">
-            <div className="mt-12">
-              <CTA />
-            </div>
-          </RevealSection>
         </RevealGroup>
       </div>
     </ContainerOuter>

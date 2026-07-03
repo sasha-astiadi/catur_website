@@ -13,6 +13,15 @@ const nextConfig = {
     '/articles/*': ['./src/app/articles/**/*.mdx'],
     '/projects/*': ['./src/app/projects/**/*.mdx'],
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img.youtube.com',
+        pathname: '/vi/**',
+      },
+    ],
+  },
 }
 
 const withMDX = nextMDX({

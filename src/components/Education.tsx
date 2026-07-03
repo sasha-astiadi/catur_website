@@ -48,12 +48,12 @@ function EducationEntry({ item, bgColor }: { item: EducationItem; bgColor: strin
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Institution</dt>
-        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-zinc-100">
+        <dd className="w-full flex-none text-sm font-medium text-zinc-900 dark:text-white">
           {item.institution}
         </dd>
 
         <dt className="sr-only">Degree</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+        <dd className="text-xs text-zinc-500 dark:text-zinc-300">
           {item.degree}
         </dd>
 
@@ -107,7 +107,7 @@ export function Education() {
 
   return (
     <div className={`rounded-xl p-6 ${newHeroGradientLight} ${newHeroGradientDark}`}>
-      <h2 className="flex text-base font-normal text-zinc-900 dark:text-zinc-100">
+      <h2 className="flex text-base font-normal text-zinc-900 dark:text-white">
         <AcademicCapIcon className="h-9 w-9 flex-none" />
         <span className="ml-3">Education</span>
       </h2>

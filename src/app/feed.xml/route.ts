@@ -22,8 +22,8 @@ export async function GET(req: Request) {
   const siteUrl = getSiteUrl(req)
 
   let author = {
-    name: 'Sasha Astiadi',
-    email: 'sashaastiadi@gmail.com',
+    name: 'Catur Hari Wijaya',
+    email: 'caturhariwijaya@gmail.com',
   }
 
   let feed = new Feed({

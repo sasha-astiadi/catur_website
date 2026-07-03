@@ -5,11 +5,11 @@ import { Layout } from '@/components/Layout'
 
 import '@/styles/tailwind.css'
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://sashaastiadi.site'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://caturhariwijaya.com'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sashaastiadi.site'),
-  title: 'Sasha Astiadi — Web Developer & Frontend Engineer',
+  metadataBase: new URL('https://caturhariwijaya.com'),
+  title: 'Catur Hari Wijaya — Web Developer & Frontend Engineer',
   description:
     'Web developer and frontend engineer building thoughtful digital products, systems, and experiences.',
   keywords: [
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     'product consultant',
     'UX',
   ],
-  authors: [{ name: 'Sasha Astiadi', url: siteUrl }],
-  creator: 'Sasha Astiadi',
-  publisher: 'Sasha Astiadi',
+  authors: [{ name: 'Catur Hari Wijaya', url: siteUrl }],
+  creator: 'Catur Hari Wijaya',
+  publisher: 'Catur Hari Wijaya',
   alternates: {
     canonical: '/',
     types: {
@@ -37,16 +37,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Sasha Astiadi — Web Developer & Frontend Engineer',
+    title: 'Catur Hari Wijaya — Web Developer & Frontend Engineer',
     description: 'Thoughtful product design, frontend engineering, and digital systems.',
     url: siteUrl,
-    siteName: 'Sasha Astiadi',
+    siteName: 'Catur Hari Wijaya',
     images: [
       {
         url: `${siteUrl}/og-image.png`,
         width: 1200,
         height: 630,
-        alt: 'Sasha Astiadi portfolio',
+        alt: 'Catur Hari Wijaya portfolio',
       },
     ],
     locale: 'en_US',
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sasha Astiadi — Web Developer & Frontend Engineer',
+    title: 'Catur Hari Wijaya — Web Developer & Frontend Engineer',
     description:
       'Thoughtful web development, product design, frontend engineering, and digital systems.',
     images: [`${siteUrl}/og-image.png`],
@@ -84,7 +84,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className="flex h-full bg-[#f8f8f5] dark:bg-black"
+        className="flex h-full bg-[#f8f8f5] dark:bg-[#0F1C27]"
         suppressHydrationWarning
       >
         <Providers>

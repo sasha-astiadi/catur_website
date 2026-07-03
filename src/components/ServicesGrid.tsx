@@ -49,15 +49,15 @@ export const ServicesGrid = () => {
                     <div className="flex items-center justify-center gap-2">
                       <div className="relative z-10 flex h-10 w-10 flex-none items-center justify-center rounded-full bg-white shadow-sm ring-1 ring-zinc-900/5 dark:bg-zinc-900 dark:ring-white/10">
                         <service.icon
-                          className="h-6 w-6 text-zinc-700 dark:text-zinc-200"
+                          className="h-6 w-6 text-zinc-700 dark:text-zinc-300"
                           aria-hidden="true"
                         />
                       </div>
-                      <p className="text-lg/8 font-normal text-zinc-800 dark:text-zinc-100">
+                      <p className="text-lg/8 font-normal text-zinc-800 dark:text-white">
                         {service.title}
                       </p>
                     </div>
-                    <p className="text-sm/5 text-zinc-600 dark:text-zinc-400">
+                    <p className="text-sm/5 text-zinc-600 dark:text-zinc-300">
                       {service.description}
                     </p>
                   </div>
