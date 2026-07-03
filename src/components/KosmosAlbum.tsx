@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { ContainerOuter } from '@/components/Container'
-import { Eyebrow, newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
+import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
 import { strongGlasgow } from '@/app/fonts'
 
 function SpotifyIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
@@ -104,7 +104,6 @@ export function KosmosAlbum() {
 
               <div className="py-8 lg:col-span-6 lg:flex lg:flex-col lg:justify-center lg:py-12">
                 <div className="mx-auto max-w-lg lg:mx-0 lg:pl-8">
-                  <Eyebrow>NEW ALBUM OUT NOW</Eyebrow>
                   <h2 className={`mt-2 text-4xl tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
                     KOSMOS
                   </h2>

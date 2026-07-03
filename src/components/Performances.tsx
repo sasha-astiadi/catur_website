@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useEffect, useMemo, useState } from 'react'
 
 import { ContainerOuter } from '@/components/Container'
-import { Eyebrow, newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
+import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
 import { strongGlasgow } from '@/app/fonts'
 
 const slides = [
@@ -67,7 +67,6 @@ export function Performances() {
         >
           <div className="px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
             <div className="mx-auto max-w-4xl text-center">
-              <Eyebrow>WATCH & LISTEN</Eyebrow>
               <h2 className={`mt-2 text-4xl tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
                 Performances
               </h2>

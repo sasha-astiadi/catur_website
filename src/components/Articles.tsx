@@ -3,7 +3,6 @@
 import { Card } from '@/components/Card'
 import { Button } from '@/components/Button'
 import {
-  Eyebrow,
   newHeroGradientDark,
   newHeroGradientLight,
 } from '@/components/ui/Texts'
@@ -26,12 +25,12 @@ type HighlightedItem = {
 }
 
 const DEFAULT_HIGHLIGHTED: HighlightedItem = {
-  title: 'Why We Chose to Reimagine OurWorld',
+  title: 'World Music Night - Sayuri',
   description:
-    'As OurWorld evolved beyond its original scope, the team came to our studio for strategic and design consultation. The goal was to realign their brand and website with the scale, clarity, and credibility of the ecosystem they were building.',
-  href: '/projects/ourworld-rebranding',
-  image: '/images/casestudy/ow_after.png',
-  eyebrow: 'Case Study',
+    'Every night is different — different sounds, different people, different energy. A cozy space where music brings everyone together — to listen, to feel, to dance, to be part of it.',
+  href: '/sayuri-world-music-night',
+  image: '/images/sayuri.jpg',
+  eyebrow: 'Every Friday @ Sayuri Ubud Bali',
   date: '2025-01-01',
 }
 
@@ -99,9 +98,9 @@ function Highlighted({ item, grouped }: { item: HighlightedItem; grouped?: boole
         </div>
       </Link>
       <Link href={item.href} className="relative z-10 mt-4 block">
-        {item.date && (
-          <Card.Eyebrow as="time" dateTime={item.date} decorate>
-            {formatDate(item.date)}
+        {item.eyebrow && (
+          <Card.Eyebrow decorate>
+            {item.eyebrow}
           </Card.Eyebrow>
         )}
         <h2 className="text-2xl font-normal tracking-tight text-zinc-800 sm:text-3xl dark:text-white">
@@ -109,7 +108,7 @@ function Highlighted({ item, grouped }: { item: HighlightedItem; grouped?: boole
         </h2>
       </Link>
       <Card.Description>{item.description}</Card.Description>
-      <Card.Cta>Read case study</Card.Cta>
+      <Card.Cta>Learn more</Card.Cta>
     </Card>
   )
 }
@@ -119,12 +118,11 @@ function HighlightedHeader() {
 
   return (
     <div>
-      <Eyebrow>CASE STUDIES</Eyebrow>
       <div className="mt-2 flex items-center justify-between gap-6">
         <h2 className={`text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
-          The Process Behind the{' '}
+          Upcoming{' '}
           <FadeWord
-            word="Products"
+            word="Events"
             className={strongGlasgow.className}
             playTrigger={isActive}
           />

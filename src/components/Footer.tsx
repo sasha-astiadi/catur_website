@@ -53,21 +53,20 @@ export function Footer() {
                   <img
                     src="/images/catur_logo_dark.svg"
                     alt="Catur Hari Wijaya"
-                    className="h-9 w-auto dark:hidden"
+                    className="h-9 lg:h-[4.5rem] w-auto dark:hidden"
                   />
                   <img
                     src="/images/catur_logo_light2.svg"
                     alt="Catur Hari Wijaya"
-                    className="hidden h-9 w-auto dark:block"
+                    className="hidden h-9 lg:h-[4.5rem] w-auto dark:block"
                   />
                 </Link>
 
                 <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-normal text-zinc-800 dark:text-zinc-300">
                   <NavLink href="/">Home</NavLink>
                   <NavLink href="/about">About</NavLink>
-                  <NavLink href="/articles">Articles</NavLink>
-                  <NavLink href="/projects">Projects</NavLink>
-                  <NavLink href="/press">Press</NavLink>
+                  <NavLink href="/discography">Discography</NavLink>
+                  <NavLink href="/ubuddrum">Workshops</NavLink>
                 </nav>
 
                 <div className="flex justify-center gap-6">
@@ -94,7 +93,7 @@ export function Footer() {
                 </div>
 
                 <p className=" mx-12 sm:mx-0 text-sm text-zinc-400 dark:text-zinc-500">
-                  &copy; 2026 Catur Hari Wijaya — Sasha Studio. Headshots by Toby Strauss for <a href="https://www.toracrafts.com" className="underline hover:text-zinc-300 dark:hover:text-zinc-400" target="_blank" rel="noopener noreferrer">Tora Crafts</a>.
+                  &copy; 2026 Catur Hari Wijaya.
                 </p>
               </div>
             </ContainerOuter>

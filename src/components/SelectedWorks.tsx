@@ -2,7 +2,6 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ContainerOuter } from '@/components/Container'
 import {
-  Eyebrow,
   newHeroGradientDark,
   newHeroGradientLight,
 } from '@/components/ui/Texts'
@@ -36,15 +35,14 @@ export const SelectedWorks = () => {
         <div
           className={`mx-2 overflow-hidden rounded-xl sm:mx-0 ${newHeroGradientLight} ${newHeroGradientDark}`}
         >
-          <div className="py-12 relative px-4 sm:px-8 lg:px-12">
-            <div className="mx-auto max-w-6xl">
-              <div className="text-center">
-                <Eyebrow>PORTFOLIO</Eyebrow>
-                <h2 className={`mt-2 text-4xl tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
+          <div className="py-8 relative px-4 sm:px-8 lg:px-12">
+            <div className="mx-auto max-w-3xl">
+              <div className="text-center mb-8">
+                <h2 className={`text-4xl tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
                   Projects & Collaborations
                 </h2>
               </div>
-              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3 sm:mt-12">
+              <div className="grid grid-cols-3 gap-4">
                 {items.map((item) => (
                   <Link
                     key={item.title}

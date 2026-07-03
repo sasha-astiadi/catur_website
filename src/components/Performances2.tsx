@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useEffect, useMemo, useState } from 'react'
 
 import { ContainerOuter } from '@/components/Container'
-import { Eyebrow, newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
+import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
 import { strongGlasgow } from '@/app/fonts'
 
 const slides = [
@@ -59,15 +59,14 @@ export function Performances2() {
     <div className="relative py-2 sm:py-6">
       <ContainerOuter>
         <div
-          className={`mx-2 overflow-hidden rounded-xl ${newHeroGradientLight} ${newHeroGradientDark} dark:ring-0 sm:mx-0`}
+          className="mx-2 overflow-hidden rounded-xl sm:mx-0"
           onPointerDown={() => setIsPaused(true)}
           onPointerUp={() => setIsPaused(false)}
           onPointerCancel={() => setIsPaused(false)}
           onPointerLeave={() => setIsPaused(false)}
         >
-          <div className="px-4 py-12 sm:px-8 sm:py-16 lg:px-12 lg:py-20">
+          <div className="py-6 sm:py-8 lg:py-10">
             <div className="mx-auto max-w-4xl text-center">
-              <Eyebrow>WATCH & LISTEN</Eyebrow>
               <h2 className={`mt-2 text-4xl tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
                 Performances
               </h2>
@@ -79,12 +78,12 @@ export function Performances2() {
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
               >
                 {slides.map((slide, slideIndex) => (
-                  <div key={slideIndex} className="w-full shrink-0 px-0 sm:px-4">
+                  <div key={slideIndex} className="w-full shrink-0">
                     <a
                       href={slide.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="group relative block aspect-video w-full overflow-hidden rounded-lg shadow-xl"
+                      className="group relative block aspect-video w-full overflow-hidden"
                     >
                       <Image
                         src={`https://img.youtube.com/vi/${slide.videoId}/maxresdefault.jpg`}

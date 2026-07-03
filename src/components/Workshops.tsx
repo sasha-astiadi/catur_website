@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import { ContainerOuter } from '@/components/Container'
 import { Button } from '@/components/Button'
-import { Eyebrow, newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
+import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts'
 import { strongGlasgow } from '@/app/fonts'
 
 export function Workshops() {
@@ -15,7 +15,6 @@ export function Workshops() {
             <div className="lg:grid lg:grid-cols-12 lg:gap-x-0">
               <div className="py-8 lg:col-span-6 lg:flex lg:flex-col lg:justify-center lg:py-12">
                 <div className="mx-auto max-w-lg lg:mx-0">
-                  <Eyebrow>Workshops</Eyebrow>
                   <h2 className={`mt-2 text-4xl tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
                     Ubud Drum
                   </h2>

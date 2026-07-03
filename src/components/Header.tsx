@@ -111,11 +111,9 @@ function MobileNavigation(
   let pageTitles: Record<string, string> = {
     '/': 'Home',
     '/about': 'About',
-    '/articles': 'Music',
-    '/projects': 'Workshops',
-    '/press': 'Media',
-    '/contact': 'Contact',
-  }
+    '/discography': 'Discography',
+    '/ubuddrum': 'Workshops',
+      }
 
   let pageTitle = (pathname ? pageTitles[pathname] : undefined) ?? 'Menu'
 
@@ -153,10 +151,10 @@ function MobileNavigation(
             <nav className="mt-6">
               <ul className={`-my-2 divide-y divide-zinc-100 text-lg text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300 ${strongGlasgow.className}`}>
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Music</MobileNavItem>
-                <MobileNavItem href="/projects">Workshops</MobileNavItem>
-                <MobileNavItem href="/press">Media</MobileNavItem>
-                <MobileNavItem href="/contact">Contact</MobileNavItem>
+                <MobileNavItem href="/discography">Discography</MobileNavItem>
+                <MobileNavItem href="/ubuddrum">Workshops</MobileNavItem>
+                <li className="block py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Media</li>
+                <li className="block py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Contact</li>
               </ul>
             </nav>
           </PopoverPanel>
@@ -202,10 +200,10 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
         className={`flex items-center rounded-xl px-3 text-xl font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-300 md:h-14 md:px-4 md:text-2xl ${strongGlasgow.className}`}
       >
         <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Music</NavItem>
-        <NavItem href="/projects">Workshops</NavItem>
-        <NavItem href="/press">Media</NavItem>
-        <NavItem href="/contact">Contact</NavItem>
+        <NavItem href="/discography">Discography</NavItem>
+        <NavItem href="/ubuddrum">Workshops</NavItem>
+        <li className="relative block px-3 py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Media</li>
+        <li className="relative block px-3 py-2 text-zinc-400 dark:text-zinc-600 cursor-not-allowed">Contact</li>
       </ul>
     </nav>
   )
@@ -244,17 +242,17 @@ function LogoPill() {
     <Link
       href="/"
       aria-label="Home"
-      className="flex h-[3.5rem] items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4"
+      className="flex h-[3.5rem] lg:h-[4rem] items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4"
     >
       <img
         src="/images/catur_logo_dark.svg"
         alt="Catur Hari Wijaya"
-        className="h-[4.2rem] w-auto dark:hidden"
+        className="h-[4.2rem] lg:h-[4.83rem] w-auto dark:hidden"
       />
       <img
         src="/images/catur_logo_light2.svg"
         alt="Catur Hari Wijaya"
-        className="hidden h-[4.2rem] w-auto dark:block"
+        className="hidden h-[4.2rem] lg:h-[4.83rem] w-auto dark:block"
       />
     </Link>
   )
