@@ -4,10 +4,10 @@ import { Card } from '@/components/Card'
 import { Button } from '@/components/Button'
 import {
   Eyebrow,
-  libreBodoniItalic,
   newHeroGradientDark,
   newHeroGradientLight,
 } from '@/components/ui/Texts'
+import { strongGlasgow } from '@/app/fonts'
 import { type ArticleWithSlug } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
 import { useRevealIsActive } from '@/components/InteractiveReveal'
@@ -121,11 +121,11 @@ function HighlightedHeader() {
     <div>
       <Eyebrow>CASE STUDIES</Eyebrow>
       <div className="mt-2 flex items-center justify-between gap-6">
-        <h2 className="text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
+        <h2 className={`text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
           The Process Behind the{' '}
           <FadeWord
             word="Products"
-            className={libreBodoniItalic}
+            className={strongGlasgow.className}
             playTrigger={isActive}
           />
         </h2>

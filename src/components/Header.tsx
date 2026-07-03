@@ -124,7 +124,7 @@ function MobileNavigation(
       {({ open }) => (
         <>
           <PopoverButton
-            className={`group flex h-14 items-center rounded-xl px-4 py-0 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
+            className={`group flex h-14 items-center rounded-xl px-4 py-0 text-sm font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-300 md:px-4 ${newHeroGradientLight} ${newHeroGradientDark}`}
           >
             <span className="text-base font-semibold text-teal-600 dark:text-teal-400">
               {pageTitle}
@@ -147,7 +147,7 @@ function MobileNavigation(
           >
             <div className="flex flex-row-reverse items-center justify-between">
               <PopoverButton aria-label="Close menu" className="-m-1 p-1">
-                <CloseIcon className="h-9 w-9 text-zinc-500 dark:text-zinc-400" />
+                <CloseIcon className="h-9 w-9 text-zinc-500 dark:text-zinc-300" />
               </PopoverButton>
             </div>
             <nav className="mt-6">
@@ -199,7 +199,7 @@ function DesktopNavigation(props: React.ComponentPropsWithoutRef<'nav'>) {
   return (
     <nav {...props}>
       <ul
-        className={`flex items-center rounded-xl px-3 text-xl font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-200 md:h-14 md:px-4 md:text-2xl ${strongGlasgow.className}`}
+        className={`flex items-center rounded-xl px-3 text-xl font-normal text-zinc-800 shadow-lg shadow-zinc-800/5 backdrop-blur-sm dark:text-zinc-300 md:h-14 md:px-4 md:text-2xl ${strongGlasgow.className}`}
       >
         <NavItem href="/about">About</NavItem>
         <NavItem href="/articles">Music</NavItem>

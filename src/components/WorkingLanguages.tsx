@@ -29,7 +29,7 @@ function LanguageBadge({ item }: { item: LanguageItem }) {
           aria-label={item.name}
         />
       </div>
-      <div className="text-xs text-zinc-600 dark:text-zinc-400">{item.name}</div>
+      <div className="text-xs text-zinc-600 dark:text-zinc-300">{item.name}</div>
     </li>
   )
 }

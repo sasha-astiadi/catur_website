@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import { strongGlasgow } from '@/app/fonts'
 
 import owAfterImage from '@/images/projects/ourworld/ow_after.png'
 
@@ -9,10 +10,10 @@ export function HighlightedCaseArchive() {
       <div className="mx-2 overflow-hidden rounded-xl bg-white ring-1 ring-zinc-100 dark:bg-zinc-900 dark:ring-zinc-300/20 sm:mx-0">
         <div className="relative px-4 lg:px-12 py-12">
           <div className="mx-auto max-w-4xl text-center">
-            <h2 className="text-4xlfont-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
+            <h2 className={`text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
               Case Studies
             </h2>
-            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
+            <p className="mt-6 text-base text-zinc-600 dark:text-zinc-300">
               A selection of written reports where I’ve helped teams plan, design, and build scalable web web applications; spanning product strategy, UX, and implementation across startups, NGOs, and global organizations.
             </p>
           </div>
@@ -33,7 +34,7 @@ export function HighlightedCaseArchive() {
 
               {/* Content Below Image */}
               <div className="max-w-4xl mx-auto">
-                <div className="mb-4 flex items-center gap-3 text-sm text-zinc-600 dark:text-zinc-400">
+                <div className="mb-4 flex items-center gap-3 text-sm text-zinc-600 dark:text-zinc-300">
                   <span className="rounded-full border border-zinc-300 dark:border-zinc-600 px-3 py-1 text-xs uppercase tracking-wide">
                     REBRAND & REDESIGN
                   </span>
@@ -46,11 +47,11 @@ export function HighlightedCaseArchive() {
                   Why We Chose to Reimagine OurWorld
                 </h3>
 
-                <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-400 sm:text-base">
+                <p className="mt-4 text-sm text-zinc-600 dark:text-zinc-300 sm:text-base">
                   As OurWorld evolved beyond its original scope, the team came to our studio for strategic and design consultation. The goal was to realign their brand and website with the scale, clarity, and credibility of the ecosystem they were building.
                 </p>
 
-                <div className="mt-6 flex items-center text-zinc-600 dark:text-zinc-400 transition group-hover:text-zinc-800 dark:group-hover:text-zinc-200">
+                <div className="mt-6 flex items-center text-zinc-600 dark:text-zinc-300 transition group-hover:text-zinc-800 dark:group-hover:text-zinc-200">
                   <span className="text-sm font-medium">Read case study</span>
                   <svg className="ml-2 h-4 w-4 transition group-hover:translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />

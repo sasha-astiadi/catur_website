@@ -8,6 +8,7 @@ import { Container } from '@/components/Container'
 import { Prose } from '@/components/Prose'
 import { type ArticleWithSlug } from '@/lib/articles'
 import { formatDate } from '@/lib/formatDate'
+import { strongGlasgow } from '@/app/fonts'
 
 function ArrowLeftIcon(props: ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -55,7 +56,7 @@ export function ProjectLayout({
           </button>
           <article>
             <header className="flex flex-col">
-              <h1 className="mt-6 text-4xlfont-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white">
+              <h1 className={`mt-6 text-4xl font-normal tracking-tight text-zinc-800 sm:text-5xl dark:text-white ${strongGlasgow.className}`}>
                 {project.title}
               </h1>
               <div className="mt-8">

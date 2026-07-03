@@ -34,3 +34,27 @@ export function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
     </svg>
   )
 }
+
+export function YouTubeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+    </svg>
+  )
+}
+
+export function FacebookIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+    </svg>
+  )
+}
+
+export function LinktreeIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path d="M7.953 15.066l-.038-4.086-4.258 4.067-1.07-1.086 4.131-4.052H2.629V8.374h4.145L2.587 4.302l1.07-1.086L8 7.319V3.167h1.602v4.152l4.344-4.103 1.07 1.086-4.187 4.072h4.145v1.535h-4.08l4.131 4.052-1.07 1.086-4.343-4.067v4.087H8.01l-.057.079zm4.09 5.768h-1.54v-3.167H8.01v3.167H6.47v-4.7h5.572v4.7z" />
+    </svg>
+  )
+}

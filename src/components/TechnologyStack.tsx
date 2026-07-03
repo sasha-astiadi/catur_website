@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { Card } from '@/components/Card'
-import { Eyebrow, libreBodoniItalic } from '@/components/ui/Texts'
+import { Eyebrow } from '@/components/ui/Texts'
+import { strongGlasgow } from '@/app/fonts'
 import { FadeWord } from '@/components/ui/fade-word'
 import { useRevealIsActive } from '@/components/InteractiveReveal'
 import {
@@ -186,7 +187,7 @@ export function TechnologyStack() {
           Full-stack Web{' '}
           <FadeWord
             word="Expertise"
-            className={libreBodoniItalic}
+            className={strongGlasgow.className}
             playTrigger={isActive}
           />
         </h2>

@@ -53,7 +53,7 @@ function EducationEntry({ item, bgColor }: { item: EducationItem; bgColor: strin
         </dd>
 
         <dt className="sr-only">Degree</dt>
-        <dd className="text-xs text-zinc-500 dark:text-zinc-400">
+        <dd className="text-xs text-zinc-500 dark:text-zinc-300">
           {item.degree}
         </dd>
 

@@ -39,7 +39,7 @@ export const HowItWorks = () => {
               <p className="mt-2 max-w-2xl text-4xl font-normal tracking-tight text-pretty text-zinc-800 sm:text-5xl dark:text-white">
                 How I work
               </p>
-              <p className="mt-4 max-w-5xl text-lg/8 text-zinc-600 dark:text-zinc-400">
+              <p className="mt-4 max-w-5xl text-lg/8 text-zinc-600 dark:text-zinc-300">
                 A clear, structured process — from idea to production — designed
                 to reduce complexity and keep teams aligned.
               </p>
@@ -53,12 +53,12 @@ export const HowItWorks = () => {
                   >
                     <dt className="flex items-center gap-x-3 text-lg font-normal text-zinc-800 dark:text-white">
                       <step.icon
-                        className="h-7 w-7 flex-none text-zinc-600 dark:text-zinc-400"
+                        className="h-7 w-7 flex-none text-zinc-600 dark:text-zinc-300"
                         aria-hidden="true"
                       />
                       {step.name}
                     </dt>
-                    <dd className="mt-3 text-sm/6 text-zinc-600 dark:text-zinc-400">
+                    <dd className="mt-3 text-sm/6 text-zinc-600 dark:text-zinc-300">
                       {step.description}
                     </dd>
 

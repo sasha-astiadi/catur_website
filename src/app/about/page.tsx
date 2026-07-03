@@ -6,7 +6,6 @@ import {
   AboutBio,
   AboutSocialLinks,
 } from '@/components/AboutContent'
-import { CTA } from '@/components/CTA'
 import { RevealGroup, RevealSection } from '@/components/InteractiveReveal'
 
 export const metadata: Metadata = {
@@ -33,11 +32,6 @@ export default function About() {
               </RevealSection>
             </div>
           </div>
-          <RevealSection id="about-cta">
-            <div className="mt-12">
-              <CTA />
-            </div>
-          </RevealSection>
         </RevealGroup>
       </div>
     </ContainerOuter>

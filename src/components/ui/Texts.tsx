@@ -18,7 +18,7 @@ export function Eyebrow({ className, ...props }: React.ComponentPropsWithoutRef<
   return (
     <h2
       className={[
-        'text-base/7 font-normal text-zinc-600 dark:text-zinc-400 leading-loose tracking-[0.2em]',
+        'text-base/7 font-normal text-zinc-600 dark:text-zinc-300 leading-loose tracking-[0.2em]',
         className,
       ]
         .filter(Boolean)

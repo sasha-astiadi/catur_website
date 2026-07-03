@@ -3,10 +3,10 @@ import { newHeroGradientDark, newHeroGradientLight } from '@/components/ui/Texts
 
 import { ContainerOuter } from '@/components/Container'
 import {
-  GitHubIcon,
   InstagramIcon,
-  LinkedInIcon,
-  XIcon,
+  YouTubeIcon,
+  FacebookIcon,
+  LinktreeIcon,
 } from '@/components/SocialIcons'
 
 function NavLink({
@@ -62,7 +62,7 @@ export function Footer() {
                   />
                 </Link>
 
-                <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-normal text-zinc-800 dark:text-zinc-200">
+                <nav className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-normal text-zinc-800 dark:text-zinc-300">
                   <NavLink href="/">Home</NavLink>
                   <NavLink href="/about">About</NavLink>
                   <NavLink href="/articles">Articles</NavLink>
@@ -72,24 +72,24 @@ export function Footer() {
 
                 <div className="flex justify-center gap-6">
                   <SocialLink
-                    href="https://x.com/sashatigresa"
-                    aria-label="Follow on X"
-                    icon={XIcon}
-                  />
-                  <SocialLink
-                    href="https://www.instagram.com/sashatigresa"
+                    href="https://www.instagram.com/caturhariwijaya"
                     aria-label="Follow on Instagram"
                     icon={InstagramIcon}
                   />
                   <SocialLink
-                    href="https://github.com/sasha-astiadi"
-                    aria-label="Follow on GitHub"
-                    icon={GitHubIcon}
+                    href="https://www.youtube.com/@caturhariwijaya"
+                    aria-label="Follow on YouTube"
+                    icon={YouTubeIcon}
                   />
                   <SocialLink
-                    href="https://www.linkedin.com/in/sastiadi/"
-                    aria-label="Follow on LinkedIn"
-                    icon={LinkedInIcon}
+                    href="https://www.facebook.com/CaturHariwijayaMusic/"
+                    aria-label="Follow on Facebook"
+                    icon={FacebookIcon}
+                  />
+                  <SocialLink
+                    href="https://linktr.ee/caturhariwijaya"
+                    aria-label="Linktree"
+                    icon={LinktreeIcon}
                   />
                 </div>
 
