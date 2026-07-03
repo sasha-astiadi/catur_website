@@ -9,23 +9,25 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://caturhariwijaya.com
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://caturhariwijaya.com'),
-  title: 'Catur Hari Wijaya — Web Developer & Frontend Engineer',
+  robots: {
+    index: false,
+    follow: false,
+  },
+  title: 'Catur Hari Wijaya — Multi-instrumentalist & Composer',
   description:
-    'Web developer and frontend engineer building thoughtful digital products, systems, and experiences.',
+    'Multi-instrumentalist weaving global rhythms and ancient Indonesian wisdom. World music, Afro Java Psychedelic, drum workshops in Ubud Bali.',
   keywords: [
-    'web developer',
-    'frontend developer',
-    'front-end developer',
-    'frontend engineer',
-    'UI engineer',
-    'web performance',
-    'React',
-    'Next.js',
-    'TypeScript',
-    'Tailwind CSS',
-    'design systems',
-    'product consultant',
-    'UX',
+    'Catur Hari Wijaya',
+    'multi-instrumentalist',
+    'world music',
+    'Indonesian music',
+    'Afro Java',
+    'djembe',
+    'drum workshop',
+    'Ubud Bali',
+    'composer',
+    'KOSMOS album',
+    'Bali to Mali',
   ],
   authors: [{ name: 'Catur Hari Wijaya', url: siteUrl }],
   creator: 'Catur Hari Wijaya',
@@ -37,16 +39,16 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: 'Catur Hari Wijaya — Web Developer & Frontend Engineer',
-    description: 'Thoughtful product design, frontend engineering, and digital systems.',
+    title: 'Catur Hari Wijaya — Multi-instrumentalist & Composer',
+    description: 'Multi-instrumentalist weaving global rhythms and ancient Indonesian wisdom.',
     url: siteUrl,
     siteName: 'Catur Hari Wijaya',
     images: [
       {
-        url: `${siteUrl}/og-image.png`,
+        url: `${siteUrl}/images/thumbnail.png`,
         width: 1200,
         height: 630,
-        alt: 'Catur Hari Wijaya portfolio',
+        alt: 'Catur Hari Wijaya',
       },
     ],
     locale: 'en_US',
@@ -54,21 +56,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Catur Hari Wijaya — Web Developer & Frontend Engineer',
+    title: 'Catur Hari Wijaya — Multi-instrumentalist & Composer',
     description:
-      'Thoughtful web development, product design, frontend engineering, and digital systems.',
-    images: [`${siteUrl}/og-image.png`],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-      'max-video-preview': -1,
-    },
+      'Multi-instrumentalist weaving global rhythms and ancient Indonesian wisdom.',
+    images: [`${siteUrl}/images/thumbnail.png`],
   },
 }
 
