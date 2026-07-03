@@ -53,12 +53,12 @@ export function Footer() {
                   <img
                     src="/images/catur_logo_dark.svg"
                     alt="Catur Hari Wijaya"
-                    className="h-9 lg:h-[4.5rem] w-auto dark:hidden"
+                    className="h-9 lg:h-18 w-auto dark:hidden"
                   />
                   <img
                     src="/images/catur_logo_light2.svg"
                     alt="Catur Hari Wijaya"
-                    className="hidden h-9 lg:h-[4.5rem] w-auto dark:block"
+                    className="hidden h-9 lg:h-18 w-auto dark:block"
                   />
                 </Link>
 
