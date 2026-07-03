@@ -242,7 +242,7 @@ function LogoPill() {
     <Link
       href="/"
       aria-label="Home"
-      className="flex h-[3.5rem] lg:h-[4rem] items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4"
+      className="flex h-14 lg:h-16 items-center justify-center rounded-xl px-3 py-0 shadow-lg shadow-zinc-800/5 backdrop-blur-sm transition md:px-4"
     >
       <img
         src="/images/catur_logo_dark.svg"

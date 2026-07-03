@@ -60,7 +60,7 @@ export const SelectedWorks = () => {
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
-                    <div className="absolute inset-0 flex items-end justify-center rounded-full bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 pb-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <div className="absolute inset-0 flex items-end justify-center rounded-full bg-linear-to-t from-black/60 via-black/20 to-transparent p-4 pb-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       <span className={`text-lg text-white text-center ${strongGlasgow.className}`}>
                         {item.title}
                       </span>
