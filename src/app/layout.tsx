@@ -9,6 +9,10 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://caturhariwijaya.com
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://caturhariwijaya.com'),
+  robots: {
+    index: false,
+    follow: false,
+  },
   title: 'Catur Hari Wijaya — Web Developer & Frontend Engineer',
   description:
     'Web developer and frontend engineer building thoughtful digital products, systems, and experiences.',
