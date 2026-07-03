@@ -51,7 +51,7 @@ export const SelectedWorks = () => {
                     href={item.href}
                     target={item.external ? '_blank' : undefined}
                     rel={item.external ? 'noopener noreferrer' : undefined}
-                    className="group relative block overflow-hidden rounded-xl"
+                    className="group relative block overflow-hidden rounded-full"
                   >
                     <div className="aspect-square">
                       <Image
@@ -62,8 +62,8 @@ export const SelectedWorks = () => {
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                       />
                     </div>
-                    <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      <span className={`text-lg text-white ${strongGlasgow.className}`}>
+                    <div className="absolute inset-0 flex items-end justify-center rounded-full bg-gradient-to-t from-black/60 via-black/20 to-transparent p-4 pb-8 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      <span className={`text-lg text-white text-center ${strongGlasgow.className}`}>
                         {item.title}
                       </span>
                     </div>
